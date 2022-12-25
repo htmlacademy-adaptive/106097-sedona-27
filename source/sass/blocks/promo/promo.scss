@@ -1,0 +1,7 @@
+@use "../../global" as *;
+
+.promo__headline {
+  font-size: $size-large;
+  line-height: $line-height-medium;
+  color: $color-black;
+}

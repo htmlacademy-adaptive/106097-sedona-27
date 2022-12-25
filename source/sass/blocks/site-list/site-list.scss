@@ -1,0 +1,15 @@
+@use "../../global" as *;
+
+.site-list {
+  @include list-reset;
+
+  background-color: $color-accent;
+}
+
+.site-list__link {
+  font-weight: 700;
+  color: $color-white;
+  line-height: $line-height-medium;
+
+  text-decoration: none;
+}

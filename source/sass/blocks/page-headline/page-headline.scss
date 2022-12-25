@@ -1,0 +1,7 @@
+@use "../../global" as *;
+
+.page-headline__headline {
+  font-size: $size-medium;
+  line-height: $line-height-medium;
+  color: $color-black;
+}

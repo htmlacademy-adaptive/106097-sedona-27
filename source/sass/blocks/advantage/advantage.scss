@@ -1,0 +1,26 @@
+@use "../../global" as *;
+
+.advantage {
+
+  &--highlighted {
+    color: $color-white;
+
+    background-color: $color-accent;
+  }
+
+  &--city {
+    background-color: $color-secondary;
+  }
+}
+
+.advantage__headline {
+  font-size: $size-medium;
+  line-height: $line-height-medium;
+  color: $color-black;
+
+  &--highlighted {
+    color: $color-white;
+
+    background-color: $color-accent;
+  }
+}
