@@ -1,8 +1,10 @@
 @use "../../global" as *;
 
-.review-form__legend {
+.input::placeholder {
   font-size: $size-medium;
   font-weight: 700;
   line-height: $line-height-medium;
   color: $color-black;
+
+  opacity: 0.3;
 }

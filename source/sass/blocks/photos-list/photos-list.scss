@@ -1,0 +1,5 @@
+@use "../../global" as *;
+
+.photos-list {
+  @include list-reset;
+}
