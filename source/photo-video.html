@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Фото и видео</title>
 </head>
 
@@ -14,23 +15,22 @@
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="main-navigation__list site-list">
-        <li class="site-list__item">
-          <a href="index.html">Главная</a>
-        </li>
+      <ul class="site-list">
         <li class="site-list__item site-list__item--current">
-          <a href="#">Фото и видео</a>
+          <a class="site-list__link"href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="review.html">Форма отзыва</a>
+          <a class="site-list__link" href="#">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru" rel="nofollow">HTML Academy</a>
+          <a class="site-list__link" href="review.html">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://htmlacademy.ru" rel="nofollow">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
-
   <main class="main-container">
     <section class="hero">
       <img class="hero__image" src="#" alt="Sedona">
@@ -90,7 +90,7 @@
       </ul>
     </section>
     <section class="promo">
-      <h2 class="promo__headline">Все еще сомневаетесь?</h2>
+      <h2 class="promo__headline promo__headline--inner-page">Все еще сомневаетесь?</h2>
       <p class="promo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <video class="promo__video" src="#"></video>
     </section>

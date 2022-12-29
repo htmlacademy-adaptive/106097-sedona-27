@@ -4,33 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Оставить отзыв</title>
 </head>
 
 <body class="page__body">
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" width="185" height="96" src="#" alt="Логотип Седоны">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo-video.html">Фото и видео</a>
-          </li>
-          <li class="site-list__item site-list__item--current">
-            <a href="#">Форма отзыва</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <img class="page-header__logo-image" width="185" height="96" src="#" alt="Логотип Седоны">
+    </a>
+    <nav class="main-navigation">
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="site-list">
+        <li class="site-list__item site-list__item--current">
+          <a class="site-list__link"href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="photo-video.html">Фото и видео</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="https://htmlacademy.ru" rel="nofollow">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
     <main class="main-container">
         <section class="hero">
           <img class="hero__image" src="#" alt="Sedona">
@@ -41,34 +41,34 @@
         </hgroup>
         <form class="review-form" action="https://echo.htmlacademy.ru">
             <fieldset class="review-form__fieldset">
-                <legend>Представьтесь:</legend>
-                <label>Имя*:<input type="text" name="" id="" placeholder="Пётр"></label>
-                <label>Фамилия*:<input type="text" name="" id="" placeholder="Пустота"></label>
-                <label>Отчество*:<input type="text" name="" id="" placeholder="Викторович"></label>
+                <legend class="review-form__legend">Представьтесь:</legend>
+                <label>Имя*:<input class="input" type="text" name="" id="" placeholder="Пётр"></label>
+                <label>Фамилия*:<input class="input" type="text" name="" id="" placeholder="Пустота"></label>
+                <label>Отчество*:<input class="input" type="text" name="" id="" placeholder="Викторович"></label>
             </fieldset>
             <fieldset class="review-form__fieldset">
-                <legend>Контактная информация:</legend>
-                <label>Контактный телефон*:<input type="text" name="" id="" placeholder="Введите телефон"></label>
-                <label>Электронная почта*:<input type="text" name="" id="" placeholder="Введите e-mail"></label>
+                <legend class="review-form__legend">Контактная информация:</legend>
+                <label>Контактный телефон*:<input class="input" type="text" name="" id="" placeholder="Введите телефон"></label>
+                <label>Электронная почта*:<input class="input" type="text" name="" id="" placeholder="Введите e-mail"></label>
             </fieldset>
             <fieldset class="review-form__fieldset">
-                <legend>Ваше jобщее впечатление:</legend>
+                <legend class="review-form__legend">Ваше jобщее впечатление:</legend>
                 <label><input type="radio" name="" id="" checked>Скорее положительное</label>
                 <label><input type="radio" name="" id="">Скорее отрицательное</label>
                 <label><input type="radio" name="" id="">Затрудняюсь ответить</label>
             </fieldset>
             <fieldset class="review-form__fieldset">
-                <legend>Посещенные достопримечательности:</legend>
+                <legend class="review-form__legend">Посещенные достопримечательности:</legend>
                 <label><input type="checkbox" name="" id="" checked>Мост Дьявола</label>
                 <label><input type="checkbox" name="" id="" checked>Гора-Колокол</label>
                 <label><input type="checkbox" name="" id="" checked>Слайд-парк</label>
                 <label><input type="checkbox" name="" id="">Красные скалы</label>
             </fieldset>
             <fieldset class="review-form__fieldset">
-                <legend>Опишите свои эмоции:</legend>
-                <input type="textarea" name="" id="" placeholder="Опишите подробно все свои восторги">
+                <legend class="review-form__legend">Опишите свои эмоции:</legend>
+                <input class="input" type="textarea" name="" id="" placeholder="Опишите подробно все свои восторги">
             </fieldset>
-            <button type="submit">Отправить отзыв</button>
+            <button class="button" type="submit">Отправить отзыв</button>
             <span>* — обязательные поля</span>
         </form>
     </main>

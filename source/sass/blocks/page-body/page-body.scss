@@ -1,0 +1,9 @@
+@use "../../global" as *;
+
+.page__body {
+  font-family: $ff-ptsans;
+  font-size: $size-small;
+  line-height: $line-height-small;
+  color: $color-text;
+  text-transform: uppercase;
+}

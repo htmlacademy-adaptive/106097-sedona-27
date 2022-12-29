@@ -1,0 +1,8 @@
+@use "../../global" as *;
+
+.hashtag {
+  font-size: $size-large;
+  font-weight: 700;
+  line-height: $line-height-medium;
+  color: $color-black;
+}

@@ -1,0 +1,11 @@
+@use "../../global" as *;
+
+.button {
+  font-size: $size-large;
+  line-height: $line-height-medium;
+  color: $color-white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $color-accent;
+}
