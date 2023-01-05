@@ -4,7 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 35px 18px 49px 18px;
+
+  &--index {
+    padding: 35px 18px 49px 18px;
+  }
+
+  &--photo {
+    padding: 17px 20px 0 20px;
+  }
 }
 
 .promo__headline {
@@ -29,6 +36,11 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 46px;
+  }
+
+  &--photo {
+    max-width: 445px;
+    margin-bottom: 38px;
   }
 }
 
