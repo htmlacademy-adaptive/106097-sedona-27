@@ -2,4 +2,36 @@
 
 .advantages-list {
   @include list-reset;
+
+  &--recommendation {
+    padding: 23px 18px 46px 18px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+
+  &--city {
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
+}
+
+.advantages-list__item {
+  min-height: 211px;
+
+  &--recommendation {
+    padding-left: 47px;
+  }
+
+  &--city {
+    padding: 24px 26px;
+
+    background-color: $color-secondary;
+  }
+
+  &--about:not(:last-child) {
+    border-bottom: 1px solid $color-separator-dark;
+  }
 }
