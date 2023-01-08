@@ -25,4 +25,25 @@
   &--submit {
     width: 280px;
   }
+
+  &--modal {
+    font-size: $size-medium;
+    line-height: $line-height-medium;
+  }
+
+  &--fail {
+    min-width: 180px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 272px;
+    }
+  }
+
+  &--success {
+    min-width: 280px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 458px;
+    }
+  }
 }
