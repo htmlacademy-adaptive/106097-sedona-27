@@ -3,11 +3,12 @@
 @use "blocks/advantage/advantage.scss";
 @use "blocks/advantages-list/advantages-list.scss";
 @use "blocks/button/button.scss";
+@use "blocks/comment/comment.scss";
+@use "blocks/container/container.scss";
 @use "blocks/copyright/copyright.scss";
 @use "blocks/hashtag/hashtag.scss";
 @use "blocks/hero/hero.scss";
 @use "blocks/likes/likes.scss";
-@use "blocks/main-container/main-container.scss";
 @use "blocks/main-navigation/main-navigation.scss";
 @use "blocks/map/map.scss";
 @use "blocks/modal/modal.scss";
@@ -23,5 +24,4 @@
 @use "blocks/site-list/site-list.scss";
 @use "blocks/social-list/social-list.scss";
 @use "blocks/page-body/page-body.scss";
-@use "blocks/input/input.scss";
 @use "blocks/visually-hidden/visually-hidden.scss";

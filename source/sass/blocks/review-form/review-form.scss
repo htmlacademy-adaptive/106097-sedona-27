@@ -1,8 +1,238 @@
 @use "../../global" as *;
 
+.review-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 60px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px 0 120px;
+  }
+}
+
+.review-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  &--greeting {
+    margin-right: 70px;
+  }
+
+  &--controls {
+    align-items: center;
+  }
+
+  &--emotions {
+    align-items: center;
+  }
+}
+
 .review-form__legend {
+  margin-bottom: 20px;
+
   font-size: $size-medium;
   font-weight: 700;
   line-height: $line-height-medium;
   color: $color-black;
+  text-align: center;
 }
+
+.review-form__label {
+  margin-bottom: 16px;
+}
+
+.review-form__label-description {
+  padding-left: 16px;
+}
+
+.review-form__label--control {
+  font-family: $ff-ptsans;
+  font-size: $size-medium;
+  font-weight: 700;
+  line-height: $line-height-medium;
+
+  @media (min-width: $tablet-width) {
+    min-width: 280px;
+  }
+}
+
+.review-form__input {
+  background-color: $color-page-background;
+  border: none;
+
+  &::placeholder {
+    font-size: $size-medium;
+    font-weight: 700;
+    line-height: $line-height-medium;
+    color: $color-black;
+
+    opacity: 0.3;
+  }
+
+  &--text {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    min-height: 58px;
+    padding: 16px;
+
+    @media (min-width: $desktop-width) {
+      min-width: 430px;
+    }
+  }
+
+  &--textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 648px;
+    min-height: 150px;
+    padding: 16px;
+
+    @media (min-width: $desktop-width) {
+      max-width: 768px;
+    }
+  }
+}
+
+/*
+
+.review-form {
+  @media (min-width: $tablet-width) {
+    padding: 0 60px 0 60px;
+  }
+}
+
+.review-form__fieldset {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+  margin: 0;
+  padding: 24px 20px 39px 20px;
+
+  border: none;
+  outline: 1px solid $color-separator-light;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    outline: none;
+  }
+
+  .review-form > &:last-of-type {
+    margin-bottom: 56px;
+    outline: none;
+  }
+
+  &--greeting {
+    @media (min-width: $tablet-width) {
+      padding-right: 43px;
+      outline: none;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $tablet-width) {
+      padding-left: 26px;
+    }
+  }
+
+  &--controls {
+    flex-wrap: wrap;
+    max-width: 960px;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+    }
+  }
+
+  &--sights {
+    @media (min-width: $tablet-width) {
+      justify-content: center;
+    }
+  }
+}
+
+.review-form__legend {
+  padding-top: 20px;
+
+  font-size: $size-medium;
+  font-weight: 700;
+  line-height: $line-height-medium;
+  color: $color-black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+}
+
+.review-form__label {
+  margin-bottom: 16px;
+}
+
+.review-form__label-description {
+  padding-left: 16px;
+}
+
+.review-form__label--control {
+  font-family: $ff-ptsans;
+  font-size: $size-medium;
+  font-weight: 700;
+  line-height: $line-height-medium;
+
+  @media (min-width: $tablet-width) {
+    min-width: 280px;
+    margin-right: 16px;
+  }
+}
+
+.review-form__input {
+  background-color: $color-page-background;
+  border: none;
+
+  &::placeholder {
+    font-size: $size-medium;
+    font-weight: 700;
+    line-height: $line-height-medium;
+    color: $color-black;
+
+    opacity: 0.3;
+  }
+
+  &--text {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    min-height: 58px;
+    padding: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      max-width: 430px;
+    }
+  }
+
+  &--textarea {
+    box-sizing: border-box;
+    max-width: 768px;
+    min-height: 150px;
+    padding: 16px;
+  }
+}
+
+*/
