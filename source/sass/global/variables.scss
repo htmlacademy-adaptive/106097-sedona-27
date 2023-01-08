@@ -1,9 +1,16 @@
+// Viewports
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
 // Palette
 $color-black: #000000;
 $color-white: #ffffff;
 $color-text: #333333;
 $color-accent: #81b3d2;
 $color-secondary: #eeeeee;
+$color-separator-dark: #d6d6d6;
+$color-separator-light: #e5e5e5;
+$color-page-background: #f2f2f2;
 
 // Typography
 $ff-ptsans: "PT Sans", "Arial", sans-serif;
@@ -11,6 +18,8 @@ $ff-ptsans: "PT Sans", "Arial", sans-serif;
 $size-small: 14px;
 $size-medium: 18px;
 $size-large: 21px;
+$size-giant: 30px;
 
 $line-height-small: 21px;
 $line-height-medium: 26px;
+$line-height-large: 40px;

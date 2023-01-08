@@ -1,5 +1,7 @@
 @use "../../global" as *;
 
 .main-navigation {
+  display: flex;
+
   font-size: $size-medium;
 }

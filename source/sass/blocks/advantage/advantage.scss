@@ -1,15 +1,29 @@
 @use "../../global" as *;
 
 .advantage {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
 
+.advantage__text {
   &--highlighted {
+    text-align: center;
     color: $color-white;
 
     background-color: $color-accent;
   }
 
+  &--town {
+    padding: 54px 18px 40px 18px;
+  }
+
+  &--diablo {
+    padding: 37px 18px;
+  }
+
   &--city {
-    background-color: $color-secondary;
+    text-align: center;
   }
 }
 
@@ -23,4 +37,11 @@
 
     background-color: $color-accent;
   }
+}
+
+.advantage__image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  max-height: 260px;
 }

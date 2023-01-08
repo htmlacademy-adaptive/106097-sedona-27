@@ -2,4 +2,23 @@
 
 .social-list {
   @include list-reset;
+
+  display: flex;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 256px;
+  }
+}
+
+.social-list__item {
+  min-width: 48px;
+  min-height: 48px;
+  margin-right: 6px;
+
+  background-color: $color-accent;
 }

@@ -1,8 +1,18 @@
 @use "../../global" as *;
 
 .hashtag {
+  margin-bottom: 33.5px;
+
   font-size: $size-large;
   font-weight: 700;
   line-height: $line-height-medium;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 254px;
+  }
 }

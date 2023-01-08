@@ -13,15 +13,17 @@
     <a class="page-header__logo" href="#">
       <img class="page-header__logo-image" width="185" height="96" src="#" alt="Логотип Седоны">
     </a>
+    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="site-list">
+      <ul class="site-list site-list--pages">
         <li class="site-list__item site-list__item--current">
-          <a class="site-list__link"href="#">Главная</a>
+          <a class="site-list__link" href="#">Главная</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="photo-video.html">Фото и видео</a>
         </li>
+      </ul>
+      <ul class="site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="review.html">Форма отзыва</a>
         </li>
@@ -31,7 +33,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main-container">
+  <main>
     <section class="hero">
       <img class="hero__image" src="#" alt="Welcome to the gorgerous Sedona. Because the Grand Canyon sucks!">
     </section>
@@ -43,14 +45,17 @@
       <h2 class="visually-hidden">О Седоне</h2>
       <ul class="advantages-list">
         <li class="advantages-list__item advantages-list__item--in-detail">
-          <section class="advantage advantage--highlighted">
-            <hgroup>
+          <section class="advantage">
+            <hgroup class="advantage__text advantage__text--highlighted advantage__text--town">
               <h3 class="advantage__headline advantage__headline--highlighted">Настоящий городок</h3>
               <span class="advantage__subheadline">— №1 —</span>
-              <p class="advantage__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </hgroup>
+            <img class="advantage__image" src="#" alt="Здания в Седоне.">
           </section>
         </li>
+      </ul>
+      <ul class="advantages-list advantages-list--recommendation">
         <li class="advantages-list__item advantages-list__item--recommendation">
           <section class="advantage">
             <hgroup>
@@ -75,36 +80,42 @@
             </hgroup>
           </section>
         </li>
+      </ul>
+      <ul class="advantages-list">
         <li class="advantages-list__item advantages-list__item--in-detail">
-          <section class="advantage advantage--highlighted">
-            <hgroup>
+          <section class="advantage">
+            <hgroup class="advantage__text advantage__text--highlighted advantage__text--diablo">
               <h3 class="advantage__headline advantage__headline--highlighted">Там есть мост дьявола</h3>
               <span>— №2 —</span>
               <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </hgroup>
+            <img class="advantage__image" src="#" alt="Мост Дьявола.">
           </section>
         </li>
-        <li class="advantages-list__item advantages-list__item--about">
-          <section class="advantage advantage--city">
-            <hgroup>
+      </ul>
+
+      <ul class="advantages-list advantages-list--city">
+        <li class="advantages-list__item advantages-list__item--city">
+          <section class="advantage">
+            <hgroup class="advantage__text advantage__text--city">
               <h3 class="advantage__headline">Небольшая площадь</h3>
               <span>— №3 —</span>
               <p>Все достопримечательности находятся очень близко</p>
             </hgroup>
           </section>
         </li>
-        <li class="advantages-list__item advantages-list__item--about">
-          <section class="advantage advantage--city">
-            <hgroup>
+        <li class="advantages-list__item advantages-list__item--city">
+          <section class="advantage">
+            <hgroup class="advantage__text advantage__text--city">
               <h3 class="advantage__headline">Красивая дорога</h3>
               <span>— №4 —</span>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </hgroup>
           </section>
         </li>
-        <li class="advantages-list__item advantages-list__item--about">
-          <section class="advantage advantage--city">
-            <hgroup>
+        <li class="advantages-list__item advantages-list__item--city">
+          <section class="advantage">
+            <hgroup class="advantage__text advantage__text--city">
               <h3 class="advantage__headline">Мало туристов</h3>
               <span>— №5 —</span>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -113,13 +124,13 @@
         </li>
       </ul>
     </section>
-    <section class="promo">
+    <section class="promo promo--index">
       <h2 class="promo__headline">Заинтересовались?</h2>
       <p class="promo__text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения
         гостиниц
         в
         Седоне</p>
-      <a class="button" href="#">Найти гостиницу</a>
+      <a class="button button--promo" href="#">Найти гостиницу</a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
