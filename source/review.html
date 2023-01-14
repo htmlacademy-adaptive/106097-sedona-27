@@ -11,16 +11,16 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="#">
-      <img class="page-header__logo-image" width="185" height="96" src="#" alt="Логотип Седоны">
+      <img class="page-header__logo-image" width="185" height="96" src="img/logo.svg" alt="Логотип Седоны">
     </a>
     <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <nav class="main-navigation">
+    <nav class="main-navigation main-navigation--closed">
       <ul class="site-list site-list--pages">
         <li class="site-list__item site-list__item--current">
-          <a class="site-list__link" href="index.html">Главная</a>
+          <a class="site-list__link" href="#">Главная</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">Фото и видео</a>
+          <a class="site-list__link" href="photo-video.html">Фото и видео</a>
         </li>
       </ul>
       <ul class="site-list">
@@ -34,8 +34,8 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <img class="hero__image" src="#" alt="Sedona">
+    <section class="hero hero--inner">
+      <img class="hero__image" src="/img/sedona.svg" alt="Sedona">
     </section>
     <hgroup class="page-headline">
       <h1 class="page-headline__headline">Оставьте свой отзыв</h1>
@@ -61,46 +61,46 @@
         <div class="container--fieldset container--contacts">
           <fieldset class="review-form__fieldset review-form__fieldset--contacts">
             <legend class="review-form__legend review-form__legend--contacts">Контактная информация:</legend>
-            <label class="review-form__label"><span class="review-form__label-description">Контактный
-                телефон*:</span><input class="review-form__input review-form__input--text" type="text" name="" id=""
+            <label class="review-form__label review-form__label--icon review-form__label--phone"><span class="review-form__label-description">Контактный
+                телефон*:</span><input class="review-form__input review-form__input--text review-form__input--icon" type="text" name="" id=""
                 placeholder="Введите телефон"></label>
-            <label class="review-form__label"><span class="review-form__label-description">Электронная
-                почта*:</span><input class="review-form__input review-form__input--text" type="text" name="" id=""
+            <label class="review-form__label review-form__label--icon review-form__label--mail"><span class="review-form__label-description">Электронная
+                почта*:</span><input class="review-form__input review-form__input--text review-form__input--icon" type="text" name="" id=""
                 placeholder="Введите e-mail"></label>
           </fieldset>
         </div>
       </div>
       <div class="container container--fieldset">
         <fieldset class="review-form__fieldset review-form__fieldset--controls">
-          <legend class="review-form__legend">Ваше общее впечатление:</legend>
+          <legend class="review-form__legend review-form__legend--impression">Ваше общее впечатление:</legend>
           <div class="container--controls">
-            <label class="review-form__label review-form__label--control"><input class="review-form__input" type="radio"
-                name="" id="" checked>Скорее положительное</label>
-            <label class="review-form__label review-form__label--control"><input class="review-form__input" type="radio"
-                name="" id="">Скорее отрицательное</label>
-            <label class="review-form__label review-form__label--control"><input class="review-form__input" type="radio"
-                name="" id="">Затрудняюсь ответить</label>
+            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden" type="radio"
+                name="rating" checked><span class="radio-mark"></span>Скорее положительное</label>
+            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden" type="radio"
+                name="rating"><span class="radio-mark"></span>Скорее отрицательное</label>
+            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden" type="radio"
+                name="rating"><span class="radio-mark"></span>Затрудняюсь ответить</label>
           </div>
         </fieldset>
       </div>
       <div class="container container--fieldset">
         <fieldset class="review-form__fieldset review-form__fieldset--controls review-form__fieldset--sights">
-          <legend class="review-form__legend">Посещенные достопримечательности:</legend>
+          <legend class="review-form__legend review-form__legend--impression">Посещенные<br> достопримечательности:</legend>
           <div class="container--controls">
-            <label class="review-form__label review-form__label--control"><input class="review-form__input"
-                type="checkbox" name="" id="" checked>Мост Дьявола</label>
-            <label class="review-form__label review-form__label--control"><input class="review-form__input"
-                type="checkbox" name="" id="" checked>Гора-Колокол</label>
-            <label class="review-form__label review-form__label--control"><input class="review-form__input"
-                type="checkbox" name="" id="" checked>Слайд-парк</label>
-            <label class="review-form__label review-form__label--control"><input class="review-form__input"
-                type="checkbox" name="" id="">Красные скалы</label>
+            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden"
+                type="checkbox" name="sights" checked><span class="checkbox-mark"></span>Мост Дьявола</label>
+            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden"
+                type="checkbox" name="sights" checked><span class="checkbox-mark"></span>Гора-Колокол</label>
+            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden"
+                type="checkbox" name="sights" checked><span class="checkbox-mark"></span>Слайд-парк</label>
+            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden"
+                type="checkbox" name="sights"><span class="checkbox-mark"></span>Красные скалы</label>
           </div>
         </fieldset>
       </div>
       <div class="container container--fieldset container--emotions">
         <fieldset class="review-form__fieldset review-form__fieldset--emotions">
-          <legend class="review-form__legend">Опишите свои эмоции:</legend>
+          <legend class="review-form__legend review-form__legend--impression">Опишите свои эмоции:</legend>
           <textarea class="review-form__input review-form__input--textarea" name="" id=""
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
@@ -115,11 +115,11 @@
   <footer class="page-footer">
     <p class="hashtag">#visitSEDONA</p>
     <ul class="social-list">
-      <li class="social-list__item"><a class="social__link social__link--vk" href="https://vk.com/htmlacademy"
+      <li class="social-list__item"><a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy"
           rel="nofollow"><span class="visually-hidden">VK</span></a></li>
-      <li class="social-list__item"><a class="social__link social__link--tg" href="https://t.me/htmlacademy"
+      <li class="social-list__item"><a class="social-list__link social-list__link--tg" href="https://t.me/htmlacademy"
           rel="nofollow"><span class="visually-hidden">Telegram</span></a></li>
-      <li class="social-list__item"><a class="social__link social__link--yt"
+      <li class="social-list__item"><a class="social-list__link social-list__link--yt"
           href="https://www.youtube.com/user/htmlacademyru" rel="nofollow"><span
             class="visually-hidden">Youtube</span></a></li>
     </ul>

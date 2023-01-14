@@ -8,20 +8,22 @@
   padding-left: 20px;
   padding-bottom: 24px;
 
+  &--fieldset {
+    padding: 24px 20px 34px 20px;
+
+    border-top: 1px solid $color-separator-light;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0 60px 0 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 120px 0 120px;
-  }
-
-  &--fieldset {
-    border-top: 1px solid $color-separator-light;
-
-    @media (min-width: $tablet-width) {
-      border: none;
-    }
   }
 
   &--contacts {
@@ -60,26 +62,3 @@
     }
   }
 }
-
-/*
-
-.container {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  &--page {
-    @media (max-width: $tablet-width) {
-      max-width: 280px;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-}
-
-*/

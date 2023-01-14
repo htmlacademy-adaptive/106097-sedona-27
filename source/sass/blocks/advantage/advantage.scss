@@ -28,6 +28,7 @@
 }
 
 .advantage__headline {
+  position: relative;
   font-size: $size-medium;
   line-height: $line-height-medium;
   color: $color-black;
@@ -36,6 +37,42 @@
     color: $color-white;
 
     background-color: $color-accent;
+  }
+
+  &::before {
+    position: absolute;
+
+    content: "";
+  }
+
+  &--house::before {
+    top: -5px;
+    left: -50px;
+
+    width: 40px;
+    height: 38px;
+
+    background-image: url("../../../img/icons/advantages/icon-house.svg");
+  }
+
+  &--burger::before {
+    top: -5px;
+    left: -50px;
+
+    width: 40px;
+    height: 36px;
+
+    background-image: url("../../../img/icons/advantages/icon-burger.svg");
+  }
+
+  &--gift::before {
+    top: -5px;
+    left: -50px;
+
+    width: 32px;
+    height: 38px;
+
+    background-image: url("../../../img/icons/advantages/icon-gift.svg");
   }
 }
 

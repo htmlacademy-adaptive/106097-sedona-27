@@ -22,3 +22,43 @@
 
   background-color: $color-accent;
 }
+
+.social-list__link {
+  position: relative;
+
+  &--vk::after {
+    position: absolute;
+    top: 17px;
+    left: 12px;
+
+    width: 24px;
+    height: 14px;
+
+    content: "";
+    background-image: url("../../../img/icons/social/vk.svg");
+  }
+
+  &--tg::after {
+    position: absolute;
+    top: 15px;
+    left: 13.5px;
+
+    width: 22px;
+    height: 18px;
+
+    content: "";
+    background-image: url("../../../img/icons/social/tg.svg");
+  }
+
+  &--yt::after {
+    position: absolute;
+    top: 17px;
+    left: 14px;
+
+    width: 20px;
+    height: 14px;
+
+    content: "";
+    background-image: url("../../../img/icons/social/yt.svg");
+  }
+}

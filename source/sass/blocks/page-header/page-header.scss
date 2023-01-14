@@ -16,7 +16,10 @@
 .page-header__logo {
   position: absolute;
   justify-self: center;
-  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    z-index: 2;
+  }
 }
 
 .page-header__toggle {

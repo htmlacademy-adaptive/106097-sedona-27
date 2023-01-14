@@ -1,0 +1,37 @@
+@use "../../global" as *;
+
+.checkbox-mark {
+  position: relative;
+
+  margin-right: 16px;
+
+  &::before {
+    position: absolute;
+    top: -10px;
+    left: -50px;
+
+    width: 46px;
+    height: 46px;
+
+    content: "";
+    border-radius: 4px;
+    background-color: $color-page-background;
+  }
+
+  &::after {
+    position: absolute;
+    top: 5px;
+    left: -35px;
+
+    display: none;
+    width: 22px;
+    height: 16px;
+
+    content: "";
+    background-image: url("../../../img/icons/tick.svg");
+  }
+}
+
+input[type="checkbox"]:checked + .checkbox-mark::after {
+  display: block;
+}
