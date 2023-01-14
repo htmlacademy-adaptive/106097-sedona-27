@@ -1,8 +1,19 @@
 @use "../../global" as *;
 
 .hero {
-  min-height: 389px;
+  display: flex;
+  justify-content: center;
+  padding: 90px 19px 90px 19px;
+
 
   background-color: #254455;
   background-repeat: no-repeat;
+
+  &--index {
+    min-height: 389px;
+  }
+
+  &--inner {
+    min-height: 158px;
+  }
 }

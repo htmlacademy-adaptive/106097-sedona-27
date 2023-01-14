@@ -3,8 +3,6 @@
 .review-form__wrapper {
   display: flex;
   flex-direction: column;
-  padding-right: 20px;
-  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -26,15 +24,24 @@
   border: none;
 
   &--greeting {
-    margin-right: 70px;
+    padding-right: 46px;
+    border-right: 1px solid $color-separator-grey;
   }
 
   &--controls {
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      border-top: 1px solid $color-separator-grey;
+    }
   }
 
   &--emotions {
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      border-top: 1px solid $color-separator-grey;
+    }
   }
 }
 
@@ -46,10 +53,52 @@
   line-height: $line-height-medium;
   color: $color-black;
   text-align: center;
+
+  &--impression {
+    @media (min-width: $tablet-width) {
+      width: 402px;
+    }
+  }
 }
 
 .review-form__label {
-  margin-bottom: 16px;
+  min-height: 46px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &--icon {
+    position: relative;
+  }
+
+  &--icon::before {
+    position: absolute;
+    top: 21px;
+    left: 222px;
+
+
+    width: 58px;
+    height: 58px;
+
+    content: "";
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $color-grey;
+
+    @media (min-width: $desktop-width) {
+      left: 372px;
+    }
+  }
+
+  &--phone::before {
+    background-image: url("../../../img/icons/phone.svg");
+  }
+
+  &--mail::before {
+    background-image: url("../../../img/icons/mail.svg");
+  }
 }
 
 .review-form__label-description {
@@ -57,13 +106,17 @@
 }
 
 .review-form__label--control {
+  position: relative;
+
   font-family: $ff-ptsans;
   font-size: $size-medium;
   font-weight: 700;
   line-height: $line-height-medium;
 
   @media (min-width: $tablet-width) {
-    min-width: 280px;
+    margin-right: 16px;
+    padding-left: 46px;
+    min-width: 218px;
   }
 }
 
@@ -93,6 +146,10 @@
     }
   }
 
+  &--icon {
+    padding-right: 58px;
+  }
+
   &--textarea {
     box-sizing: border-box;
     width: 100%;
@@ -105,134 +162,3 @@
     }
   }
 }
-
-/*
-
-.review-form {
-  @media (min-width: $tablet-width) {
-    padding: 0 60px 0 60px;
-  }
-}
-
-.review-form__fieldset {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-  margin: 0;
-  padding: 24px 20px 39px 20px;
-
-  border: none;
-  outline: 1px solid $color-separator-light;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    outline: none;
-  }
-
-  .review-form > &:last-of-type {
-    margin-bottom: 56px;
-    outline: none;
-  }
-
-  &--greeting {
-    @media (min-width: $tablet-width) {
-      padding-right: 43px;
-      outline: none;
-    }
-  }
-
-  &--contacts {
-    @media (min-width: $tablet-width) {
-      padding-left: 26px;
-    }
-  }
-
-  &--controls {
-    flex-wrap: wrap;
-    max-width: 960px;
-
-    @media (min-width: $tablet-width) {
-      flex-direction: row;
-    }
-  }
-
-  &--sights {
-    @media (min-width: $tablet-width) {
-      justify-content: center;
-    }
-  }
-}
-
-.review-form__legend {
-  padding-top: 20px;
-
-  font-size: $size-medium;
-  font-weight: 700;
-  line-height: $line-height-medium;
-  color: $color-black;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
-  }
-}
-
-.review-form__label {
-  margin-bottom: 16px;
-}
-
-.review-form__label-description {
-  padding-left: 16px;
-}
-
-.review-form__label--control {
-  font-family: $ff-ptsans;
-  font-size: $size-medium;
-  font-weight: 700;
-  line-height: $line-height-medium;
-
-  @media (min-width: $tablet-width) {
-    min-width: 280px;
-    margin-right: 16px;
-  }
-}
-
-.review-form__input {
-  background-color: $color-page-background;
-  border: none;
-
-  &::placeholder {
-    font-size: $size-medium;
-    font-weight: 700;
-    line-height: $line-height-medium;
-    color: $color-black;
-
-    opacity: 0.3;
-  }
-
-  &--text {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    min-width: 280px;
-    min-height: 58px;
-    padding: 16px;
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      max-width: 430px;
-    }
-  }
-
-  &--textarea {
-    box-sizing: border-box;
-    max-width: 768px;
-    min-height: 150px;
-    padding: 16px;
-  }
-}
-
-*/

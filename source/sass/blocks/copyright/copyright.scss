@@ -1,6 +1,23 @@
 @use "../../global" as *;
 
 .copyright {
+  position: relative;
+
+  padding-right: 38.9px;
+
   color: $color-black;
   text-decoration: none;
+
+  &::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 27px;
+    height: 35px;
+
+    content: "";
+    background-image: url("../../../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+  }
 }
