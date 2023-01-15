@@ -21,5 +21,8 @@
 }
 
 .main-navigation--closed.main-navigation--nojs {
+  position: static;
+  order: -1;
+
   display: block;
 }

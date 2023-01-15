@@ -17,6 +17,10 @@
   position: absolute;
   justify-self: center;
 
+  &--nojs {
+    position: static;
+  }
+
   @media (min-width: $tablet-width) {
     z-index: 2;
   }
