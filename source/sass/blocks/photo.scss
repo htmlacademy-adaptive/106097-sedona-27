@@ -1,0 +1,7 @@
+@use "../global" as *;
+
+.photo__title {
+  font-size: $size-small;
+  line-height: $line-height-small;
+  font-weight: 700;
+}

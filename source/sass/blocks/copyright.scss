@@ -1,0 +1,33 @@
+@use "../global" as *;
+
+.copyright {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding-right: 38.9px;
+
+  color: $color-black;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  &:active {
+    color: $color-grey-active;
+  }
+}
+
+.copyright__icon {
+  margin-left: 8.5px;
+}
+
+.copyright:hover .copyright__icon path {
+  fill: $color-accent;
+}
+
+.copyright:active .copyright__icon path {
+  fill: $color-grey-active;
+}

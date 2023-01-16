@@ -1,0 +1,84 @@
+@use "../global" as *;
+
+.advantage {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.advantage__text {
+  &--highlighted {
+    text-align: center;
+    color: $color-white;
+
+    background-color: $color-accent;
+  }
+
+  &--town {
+    padding: 54px 18px 40px 18px;
+  }
+
+  &--diablo {
+    padding: 37px 18px;
+  }
+
+  &--city {
+    text-align: center;
+  }
+}
+
+.advantage__headline {
+  position: relative;
+  font-size: $size-medium;
+  line-height: $line-height-medium;
+  color: $color-black;
+
+  &--highlighted {
+    color: $color-white;
+
+    background-color: $color-accent;
+  }
+
+  &::before {
+    position: absolute;
+
+    content: "";
+  }
+
+  &--house::before {
+    top: -5px;
+    left: -50px;
+
+    width: 40px;
+    height: 38px;
+
+    background-image: url("../../img/icons/advantages/icon-house.svg");
+  }
+
+  &--burger::before {
+    top: -5px;
+    left: -50px;
+
+    width: 40px;
+    height: 36px;
+
+    background-image: url("../../img/icons/advantages/icon-burger.svg");
+  }
+
+  &--gift::before {
+    top: -5px;
+    left: -50px;
+
+    width: 32px;
+    height: 38px;
+
+    background-image: url("../../img/icons/advantages/icon-gift.svg");
+  }
+}
+
+.advantage__image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  max-height: 260px;
+}

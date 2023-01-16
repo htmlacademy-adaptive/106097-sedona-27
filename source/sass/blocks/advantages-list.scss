@@ -1,0 +1,62 @@
+@use "../global" as *;
+
+.advantages-list {
+  @include list-reset;
+
+  &--recommendation {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    padding: 23px 18px 46px 18px;
+
+    @media (min-width: $tablet-width) {
+      grid-auto-flow: row;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &--city {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+
+    background-color: $color-secondary;
+
+    @media (min-width: $tablet-width) {
+      grid-auto-flow: row;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.advantages-list__item {
+  &--recommendation {
+    max-width: 284px;
+    padding-left: 47px;
+  }
+
+  &--recommendation:not(:last-child) {
+    margin-bottom: 33px;
+  }
+
+  &--city {
+    max-width: 284px;
+    padding: 24px 26px;
+  }
+
+  &--city:not(:last-child) {
+    border-bottom: 1px solid $color-separator-dark;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+  }
+
+  &--about:not(:last-child) {
+    border-bottom: 1px solid $color-separator-dark;
+  }
+
+  &--in-detail {
+    min-height: 211px;
+  }
+}

@@ -1,0 +1,32 @@
+@use "../global" as *;
+
+.page-headline {
+  padding: 32px 18px 16px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47.5px;
+    padding-bottom: 55.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 44px;
+  }
+}
+
+.page-headline__headline {
+  margin: 0 auto;
+  max-width: 520px;
+
+  font-size: $size-medium;
+  line-height: $line-height-medium;
+  text-align: center;
+  color: $color-black;
+}
+
+.page-headline__subheadline {
+  margin: 0 auto;
+  max-width: 520px;
+
+  text-align: center;
+}
