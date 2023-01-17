@@ -1,7 +1,62 @@
 @use "../global" as *;
 
 .photo__title {
+  grid-row: 1 / 2;
+
   font-size: $size-small;
   line-height: $line-height-small;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+  }
+}
+
+.photo__image {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.photo__author {
+  grid-row: 2 / 3;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+  }
+}
+
+.photo__wrapper {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+
+    width: 100%;
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 22px 20px 15px 20px;
+  }
+
+  @media ($tablet-width <= width < $desktop-width) {
+    background-color: $color-page-background;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

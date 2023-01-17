@@ -1,6 +1,39 @@
 @use "../global" as *;
 
 .likes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-row: 1 / -1;
+
   font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+  }
+}
+
+.likes__button {
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover svg path {
+    fill: $color-accent;
+  }
+
+  &:active svg path {
+    fill: $color-eccent-active;
+  }
+
+  & svg path {
+    @media (min-width: $desktop-width) {
+      fill: $color-white;
+      opacity: 1;
+    }
+  }
 }

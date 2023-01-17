@@ -1,6 +1,7 @@
 @use "../global" as *;
 
 .photos {
-  display: grid;
-  justify-content: center;
+  @media ($tablet-width <= width < $desktop-width) {
+    padding: 0 60px;
+  }
 }
