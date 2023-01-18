@@ -1,5 +1,3 @@
-@use "../global" as *;
-
 .photos {
   @media ($tablet-width <= width < $desktop-width) {
     display: flex;

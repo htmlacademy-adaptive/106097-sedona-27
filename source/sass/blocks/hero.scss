@@ -1,5 +1,3 @@
-@use "../global" as *;
-
 .hero {
   position: relative;
 
@@ -13,7 +11,7 @@
 
 
   background-color: #254455;
-  background-image: url("../../img/background/background@1x.jpg");
+  background-image: url("../img/background/background@1x.jpg");
   background-position-x: 50%;
   background-position-y: top;
   background-repeat: no-repeat;
@@ -25,12 +23,12 @@
     height: 57px;
 
     content: "";
-    background-image: url("../../img/intro-triangle.svg");
+    background-image: url("../img/intro-triangle.svg");
     background-position-x: 50%;
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/background/background@2x.jpg");
+    background-image: url("../img/background/background@2x.jpg");
   }
 
   &--index {
