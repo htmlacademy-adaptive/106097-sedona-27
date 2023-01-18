@@ -5,10 +5,12 @@
   display: grid;
 
   @media (min-width: $tablet-width) {
+    max-width: 648px;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 100%;
     padding: 0;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -43,6 +45,7 @@
   padding: 24px 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     padding: 0;
   }
 }
