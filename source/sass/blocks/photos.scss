@@ -1,0 +1,9 @@
+@use "../global" as *;
+
+.photos {
+  @media ($tablet-width <= width < $desktop-width) {
+    display: flex;
+    justify-content: center;
+    padding: 0 60px;
+  }
+}

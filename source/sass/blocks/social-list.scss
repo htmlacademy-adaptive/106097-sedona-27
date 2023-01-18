@@ -1,0 +1,50 @@
+@use "../global" as *;
+
+.social-list {
+  @include list-reset;
+
+  display: flex;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 100px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 256px;
+  }
+}
+
+.social-list__item {
+  min-width: 48px;
+  min-height: 48px;
+
+  background-color: $color-accent;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+
+  &:hover {
+    background-color: $color-eccent-hover;
+  }
+
+  &:active {
+    background-color: $color-eccent-active;
+  }
+}
+
+.social-list__item:active .social-list__icon path {
+  opacity: 0.3;
+}
+
+.social-list__link {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

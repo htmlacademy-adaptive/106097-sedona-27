@@ -1,0 +1,138 @@
+@use "../global" as *;
+
+.advantage--in-detail {
+  line-height: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.advantage__text {
+  &--highlighted {
+    min-width: 256px;
+
+    text-align: center;
+    color: $color-white;
+
+    background-color: $color-accent;
+  }
+
+  &--town {
+    padding: 54px 18px 40px 18px;
+  }
+
+  &--diablo {
+    padding: 37px 18px;
+  }
+
+  &--city {
+    text-align: center;
+  }
+}
+
+.advantage__headline {
+  position: relative;
+  font-size: $size-medium;
+  line-height: $line-height-medium;
+  color: $color-black;
+
+  &--highlighted {
+    line-height: 26px;
+    color: $color-white;
+
+    background-color: $color-accent;
+  }
+
+  &::before {
+    position: absolute;
+
+    content: "";
+  }
+
+  &--recommendation {
+    @media (min-width: $tablet-width) {
+      padding-top: 100px;
+    }
+  }
+
+  &--house::before {
+    top: -5px;
+    left: -50px;
+
+    width: 40px;
+    height: 38px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 75px;
+      width: 77px;
+      height: 72px;
+
+      background-size: 77px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 110px;
+    }
+
+    background-image: url("../../img/icons/advantages/icon-house.svg");
+  }
+
+  &--burger::before {
+    top: -5px;
+    left: -50px;
+
+    width: 40px;
+    height: 36px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 75px;
+      width: 80px;
+      height: 72px;
+
+      background-size: 80px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 110px;
+    }
+
+    background-image: url("../../img/icons/advantages/icon-burger.svg");
+  }
+
+  &--gift::before {
+    top: -5px;
+    left: -50px;
+
+    width: 32px;
+    height: 38px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 75px;
+      width: 66px;
+      height: 78px;
+
+      background-size: 66px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 120px;
+    }
+
+    background-image: url("../../img/icons/advantages/icon-gift.svg");
+  }
+}
+
+.image.advantage__image {
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 256px);
+    object-fit: cover;
+  }
+}
+
+.advantage__paragraph {
+  line-height: 21px;
+}
