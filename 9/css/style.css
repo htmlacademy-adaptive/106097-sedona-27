@@ -416,7 +416,7 @@
 }
 .hero::before {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   height: 57px;
   content: "";
@@ -631,8 +631,8 @@
 
 .page-header {
   position: relative;
-  display: grid;
-  padding: 0 20.1px;
+  display: flex;
+  justify-content: center;
   min-height: 56px;
 }
 @media (min-width: 768px) {
@@ -644,14 +644,10 @@
 .page-header__logo {
   position: absolute;
   justify-self: center;
+  z-index: 2;
 }
 .page-header__logo--nojs {
   position: static;
-}
-@media (min-width: 768px) {
-  .page-header__logo {
-    z-index: 2;
-  }
 }
 
 .page-header__toggle {
@@ -671,23 +667,20 @@
 .page-header__toggle:active {
   opacity: 30%;
 }
+@media (min-width: 768px) {
+  .page-header__toggle {
+    display: none;
+  }
+}
 .page-header__toggle--opened {
+  top: -8px;
   right: 19.8px;
   width: 22.2px;
   height: 22.2px;
-  z-index: 1;
+  z-index: 4;
 }
 .page-header__toggle--nojs {
   display: none;
-}
-
-.page-header__icon--cross {
-  display: none;
-}
-@media (min-width: 768px) {
-  .page-header__icon--burger {
-    display: none;
-  }
 }
 
 .page-header__toggle--opened .page-header__icon--cross {
@@ -1191,25 +1184,25 @@ input[type=checkbox]:checked + .review-form__checkbox-mark::after {
   padding: 0;
   list-style-type: none;
   width: 100%;
-  background-color: #81b3d2;
 }
 @media (min-width: 768px) {
   .site-list {
     position: static;
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    max-width: 40%;
+    width: 100%;
     background-color: #ffffff;
   }
 }
-.site-list--pages {
-  margin-right: auto;
+.site-list--opened {
+  background-color: #81b3d2;
+  z-index: 3;
 }
 
 .site-list__item {
   position: relative;
   display: flex;
+  width: 20%;
 }
 @media (max-width: 768px) {
   .site-list__item {
@@ -1217,15 +1210,23 @@ input[type=checkbox]:checked + .review-form__checkbox-mark::after {
   }
 }
 
+.site-list__item:nth-child(2n):not(:nth-child(4n)) {
+  margin-right: 20%;
+}
+
 .site-list__item--current .site-list__link {
   color: #766357;
+}
+
+.site-list--opened .site-list__item {
+  width: 100%;
 }
 
 .site-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 55px;
+  min-height: 56px;
   flex-grow: 1;
   font-weight: 700;
   color: #ffffff;
