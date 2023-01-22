@@ -19,11 +19,3 @@
 .copyright__icon {
   margin-left: 8.5px;
 }
-
-.copyright:hover .copyright__icon path {
-  fill: $color-accent;
-}
-
-.copyright:active .copyright__icon path {
-  fill: $color-grey-active;
-}

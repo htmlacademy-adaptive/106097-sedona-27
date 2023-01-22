@@ -124,6 +124,10 @@
   }
 }
 
+.advantage__subheadline {
+  line-height: $line-height-small;
+}
+
 .image.advantage__image {
   @media (min-width: $tablet-width) {
     width: calc(100% - 256px);

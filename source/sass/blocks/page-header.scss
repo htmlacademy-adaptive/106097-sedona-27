@@ -35,12 +35,13 @@
 
   border: none;
   background-color: transparent;
+  opacity: 1;
 
-  &:hover svg path {
+  &:hover {
     opacity: 60%;
   }
 
-  &:active svg path {
+  &:active {
     opacity: 30%;
   }
 
