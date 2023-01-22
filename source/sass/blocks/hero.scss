@@ -39,3 +39,13 @@
     min-height: 158px;
   }
 }
+
+.hero__image {
+  width: 282px;
+  height: 214px;
+
+  @media (min-width: $desktop-width) {
+    width: 461px;
+    height: 350px;
+  }
+}
