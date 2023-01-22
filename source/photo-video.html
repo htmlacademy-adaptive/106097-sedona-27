@@ -15,33 +15,31 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
+    <a class="page-header__logo page-header__logo--nojs" href="#">
       <img class="page-header__logo-image" width="185" height="96" src="img/logo.svg" alt="Логотип Седоны">
     </a>
     <button class="page-header__toggle page-header__toggle--nojs" type="button"><svg width="23" height="22">
-      <use xlink:href="img/sprite.svg#burger"></use>
-    </svg>
-    <svg width="23" height="23">
-      <use xlink:href="img/sprite.svg#cross"></use>
-    </svg>
-    <span class="visually-hidden">Открыть меню</span></button>
+        <use xlink:href="img/sprite.svg#burger"></use>
+      </svg>
+      <svg class="page-header__icon page-header__icon--cross" width="23" height="23">
+        <use xlink:href="img/sprite.svg#cross"></use>
+      </svg>
+      <span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
-      <ul class="site-list site-list--pages">
+      <ul class="site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item site-list__item--current">
           <a class="site-list__link" href="#">Фото и видео</a>
         </li>
-      </ul>
-      <ul class="site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="review.html">Форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="https://htmlacademy.ru" rel="nofollow">HTML Academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru" rel="nofollow" aria-label="Сайт HTML Academy">HTML
+            Academy</a>
         </li>
-      </ul>
     </nav>
   </header>
   <main>
