@@ -7,10 +7,13 @@
   color: $color-black;
 
   @media (min-width: $tablet-width) {
-    margin-right: 97px;
+    margin-top: 30px;
+    margin-right: 111px;
+    margin-left: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 254px;
+    margin-left: 112px;
+    margin-right: 270px;
   }
 }

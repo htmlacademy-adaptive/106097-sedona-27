@@ -1,9 +1,16 @@
 .comment {
-  opacity: 60%;
   align-self: end;
+  margin-top: 3px;
+
+  font-size: $size-tiny;
+  line-height: $line-height-small;
+
+  opacity: 60%;
 
   @media (min-width: $tablet-width) {
     align-self: center;
     margin-left: auto;
+
+    font-size: $size-small;
   }
 }

@@ -43,12 +43,12 @@
     </nav>
   </header>
   <main>
-    <section class="hero hero--inner">
-      <img class="image hero__image" src="img/sedona.svg" width="560" height="80" alt="Sedona">
+    <section class="hero hero--inner hero--review">
+      <img class="hero__image hero__image--inner" src="img/sedona.svg" width="229" height="39" alt="Sedona">
     </section>
-    <hgroup class="page-headline">
-      <h1 class="page-headline__headline">Оставьте свой отзыв</h1>
-      <p class="page-headline__subheadline">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+    <hgroup class="page-headline page-headline--inner page-headline--review">
+      <h1 class="page-headline__headline page-headline__headline--inner page-headline__headline--review">Оставьте свой отзыв</h1>
+      <p class="page-headline__subheadline">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="br br--tablet"> а также о
         посещенных вами достопримечательностях</p>
     </hgroup>
     <form class="review-form" action="https://echo.htmlacademy.ru">
@@ -79,7 +79,7 @@
           </fieldset>
         </div>
       </div>
-      <div class="container container--page container--fieldset">
+      <div class="container container--page container--fieldset container--impression">
         <fieldset class="review-form__fieldset review-form__fieldset--controls">
           <legend class="review-form__legend review-form__legend--impression">Ваше общее впечатление:</legend>
           <div class="container container--controls">
@@ -92,24 +92,24 @@
           </div>
         </fieldset>
       </div>
-      <div class="container container--page container--fieldset">
+      <div class="container container--page container--fieldset container--sights">
         <fieldset class="review-form__fieldset review-form__fieldset--controls review-form__fieldset--sights">
-          <legend class="review-form__legend review-form__legend--impression">Посещенные<br> достопримечательности:</legend>
-          <div class="container container--controls">
-            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden"
+          <legend class="review-form__legend review-form__legend--sights">Посещенные<br> достопримечательности:</legend>
+          <div class="container container--controls container--controls-sights">
+            <label class="review-form__label review-form__label--control review-form__label--checkbox"><input class="review-form__input visually-hidden"
                 type="checkbox" name="sights" checked><span class="review-form__checkbox-mark"></span>Мост Дьявола</label>
-            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden"
+            <label class="review-form__label review-form__label--control review-form__label--checkbox"><input class="review-form__input visually-hidden"
                 type="checkbox" name="sights" checked><span class="review-form__checkbox-mark"></span>Гора-Колокол</label>
-            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden"
+            <label class="review-form__label review-form__label--control review-form__label--checkbox"><input class="review-form__input visually-hidden"
                 type="checkbox" name="sights" checked><span class="review-form__checkbox-mark"></span>Слайд-парк</label>
-            <label class="review-form__label review-form__label--control"><input class="review-form__input visually-hidden"
+            <label class="review-form__label review-form__label--control review-form__label--checkbox"><input class="review-form__input visually-hidden"
                 type="checkbox" name="sights"><span class="review-form__checkbox-mark"></span>Красные скалы</label>
           </div>
         </fieldset>
       </div>
       <div class="container container--page container--fieldset container--emotions">
         <fieldset class="review-form__fieldset review-form__fieldset--emotions">
-          <legend class="review-form__legend review-form__legend--impression">Опишите свои эмоции:</legend>
+          <legend class="review-form__legend review-form__legend--emotions">Опишите свои эмоции:</legend>
           <textarea class="review-form__input review-form__input--textarea" name="emotions"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>

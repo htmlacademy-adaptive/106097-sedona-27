@@ -44,11 +44,11 @@
   </header>
   <main>
     <section class="hero hero--inner">
-      <img class="image hero__image" src="img/sedona.svg" width="560" height="80" alt="Sedona">
+      <img class="hero__image hero__image--inner" src="img/sedona.svg" width="229" height="39" alt="Sedona">
     </section>
-    <hgroup class="page-headline">
-      <h1 class="page-headline__headline">Фото и видео</h1>
-      <p class="page-headline__subheadline">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
+    <hgroup class="page-headline page-headline--inner">
+      <h1 class="page-headline__headline page-headline__headline--inner">Фото и видео</h1>
+      <p class="page-headline__subheadline">Не можете решиться на путешествие из-за курса?<br class="br br--tablet"> Фотографии помогут вам забыть
         о политике и экономике.</p>
     </hgroup>
     <section class="photos">
@@ -57,21 +57,21 @@
         <li class="photos-list__item photos-list__item--main photo">
           <section class="photos-list__container">
             <picture class="picture">
-              <source media="(min-width: 1280px)" srcset="img/content/photo/landscape/landscape-desktop@1x.jpg 1x, img/content/photo/landscape/landscape-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/content/photo/landscape/landscape-tablet@1x.jpg 1x, img/content/photo/landscape/landscape-tablet@2x.jpg 2x">
-              <img class="image photo__image" src="img/content/photo/landscape/landscape-mobile@1x.jpg" srcset="img/content/photo/landscape/landscape-mobile@2x.jpg 2x"
-                width="1200" height="400" alt="Седона на закате.">
+              <source media="(min-width: 1280px)"
+                srcset="img/content/photo/landscape/landscape-desktop@1x.jpg 1x, img/content/photo/landscape/landscape-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/content/photo/landscape/landscape-tablet@1x.jpg 1x, img/content/photo/landscape/landscape-tablet@2x.jpg 2x">
+              <img class="image photo__image" src="img/content/photo/landscape/landscape-mobile@1x.jpg"
+                srcset="img/content/photo/landscape/landscape-mobile@2x.jpg 2x" width="1200" height="400"
+                alt="Седона на закате.">
             </picture>
             <div class="photo__wrapper">
               <h3 class="photo__title">Неродные просторы</h3>
               <p class="photo__author">Автор фото: Борис</p>
               <div class="likes">
-                <button class="likes__button" type="button"><svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="black" />
-                  </svg><span class="visually-hidden">Лайк</span></button><span class="likes__counter">1350</span>
+                <button class="likes__button" type="button"><svg class="likes__icon" width="23" height="21">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg><span class="visually-hidden">Лайк</span></button><span class="likes__counter">1350</span>
               </div>
             </div>
           </section>
@@ -79,21 +79,20 @@
         <li class="photos-list__item photo">
           <section class="photos-list__container">
             <picture class="picture">
-              <source media="(min-width: 1280px)" srcset="img/content/photo/trees/trees-desktop@1x.jpg 1x, img/content/photo/trees/trees-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/content/photo/trees/trees-tablet@1x.jpg 1x, img/content/photo/trees/trees-tablet@2x.jpg 2x">
-              <img class="image photo__image" src="img/content/photo/trees/trees-mobile@1x.jpg" srcset="img/content/photo/trees/trees-mobile@2x.jpg 2x"
-              width="400" height="267" alt="Какой-то кактус.">
+              <source media="(min-width: 1280px)"
+                srcset="img/content/photo/trees/trees-desktop@1x.jpg 1x, img/content/photo/trees/trees-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/content/photo/trees/trees-tablet@1x.jpg 1x, img/content/photo/trees/trees-tablet@2x.jpg 2x">
+              <img class="image photo__image" src="img/content/photo/trees/trees-mobile@1x.jpg"
+                srcset="img/content/photo/trees/trees-mobile@2x.jpg 2x" width="400" height="267" alt="Какой-то кактус.">
             </picture>
             <div class="photo__wrapper">
               <h3 class="photo__title">Местная растительность</h3>
               <p class="photo__author">Автор фото: Сергей</p>
               <div class="likes">
-                <button class="likes__button" type="button"><svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="black" />
-                  </svg><span class="visually-hidden">Лайк</span></button><span class="likes__counter">143</span>
+                <button class="likes__button" type="button"><svg class="likes__icon" width="23" height="21">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg><span class="visually-hidden">Лайк</span></button><span class="likes__counter">143</span>
               </div>
             </div>
           </section>
@@ -101,21 +100,20 @@
         <li class="photos-list__item photo">
           <section class="photos-list__container">
             <picture class="picture">
-              <source media="(min-width: 1280px)" srcset="img/content/photo/road/road-desktop@1x.jpg 1x, img/content/photo/road/road-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/content/photo/road/road-tablet@1x.jpg 1x, img/content/photo/road/road-tablet@2x.jpg 2x">
-              <img class="image photo__image" src="img/content/photo/road/road-mobile@1x.jpg" srcset="img/content/photo/road/road-mobile@2x.jpg 2x"
-              width="400" height="267" alt="Дорога в горах.">
+              <source media="(min-width: 1280px)"
+                srcset="img/content/photo/road/road-desktop@1x.jpg 1x, img/content/photo/road/road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/content/photo/road/road-tablet@1x.jpg 1x, img/content/photo/road/road-tablet@2x.jpg 2x">
+              <img class="image photo__image" src="img/content/photo/road/road-mobile@1x.jpg"
+                srcset="img/content/photo/road/road-mobile@2x.jpg 2x" width="400" height="267" alt="Дорога в горах.">
             </picture>
             <div class="photo__wrapper">
               <h3 class="photo__title">Дорога на север</h3>
               <p class="photo__author">Автор фото: Петр</p>
               <div class="likes">
-                <button class="likes__button" type="button"><svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="black" />
-                  </svg><span class="visually-hidden">Лайк</span></button><span class="likes__counter">96</span>
+                <button class="likes__button" type="button"><svg class="likes__icon" width="23" height="21">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg><span class="visually-hidden">Лайк</span></button><span class="likes__counter">96</span>
               </div>
             </div>
           </section>
@@ -123,20 +121,20 @@
         <li class="photos-list__item photo">
           <section class="photos-list__container">
             <picture class="picture">
-              <source media="(min-width: 1280px)" srcset="img/content/photo/bridge/bridge-desktop@1x.jpg 1x, img/content/photo/bridge/bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/content/photo/bridge/bridge-tablet@1x.jpg 1x, img/content/photo/bridge/bridge-tablet@2x.jpg 2x">
-              <img class="image photo__image" src="img/content/photo/bridge/bridge-mobile@1x.jpg" srcset="img/content/photo/bridge/bridge-mobile@2x.jpg 2x" width="400" height="267" alt="Мост Дьявола">
+              <source media="(min-width: 1280px)"
+                srcset="img/content/photo/bridge/bridge-desktop@1x.jpg 1x, img/content/photo/bridge/bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/content/photo/bridge/bridge-tablet@1x.jpg 1x, img/content/photo/bridge/bridge-tablet@2x.jpg 2x">
+              <img class="image photo__image" src="img/content/photo/bridge/bridge-mobile@1x.jpg"
+                srcset="img/content/photo/bridge/bridge-mobile@2x.jpg 2x" width="400" height="267" alt="Мост Дьявола">
             </picture>
             <div class="photo__wrapper">
               <h3 class="photo__title">Мост Дьявола</h3>
               <p class="photo__author">Автор фото: Антон</p>
               <div class="likes">
-                <button class="likes__button" type="button"><svg width="23" height="21" viewBox="0 0 23 21" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="black" />
-                  </svg><span class="visually-hidden">Лайк</span></button><span class="likes__counter">254</span>
+                <button class="likes__button" type="button"><svg class="likes__icon" width="23" height="21">
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg><span class="visually-hidden">Лайк</span></button><span class="likes__counter">254</span>
               </div>
             </div>
           </section>
@@ -145,9 +143,10 @@
     </section>
     <section class="promo promo--photo">
       <h2 class="promo__headline promo__headline--inner-page">Все еще сомневаетесь?</h2>
-      <p class="promo__text promo__text--photo">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+      <p class="promo__text promo__text--photo">Смотрите видеопрезентацию и<br class="br br--mobile"> скорее за билетами, пока они<br class="br br--tablet"> не
+        подорожали в
         очередной раз!</p>
-      <img class="image promo__image" src="img/video-poster.jpg" width="800" height="500"></video>
+      <img class="promo__image" src="img/video-poster.jpg" width="800" height="500"></video>
     </section>
   </main>
 
@@ -167,8 +166,8 @@
             <use xlink:href="img/sprite.svg#yt"></use>
           </svg><span class="visually-hidden">Youtube</span></a></li>
     </ul>
-    <a class="copyright" href="https://htmlacademy.ru" rel="nofollow" aria-label="Сайт HTML Academy">Разработано<svg class="copyright__icon"
-        width="27" height="35">
+    <a class="copyright" href="https://htmlacademy.ru" rel="nofollow" aria-label="Сайт HTML Academy">Разработано<svg
+        class="copyright__icon" width="27" height="35">
         <use xlink:href="img/sprite.svg#academy"></use>
       </svg><span class="visually-hidden">HTML
         Academy</span></a>

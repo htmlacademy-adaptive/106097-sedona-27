@@ -47,9 +47,10 @@
   min-height: 56px;
   flex-grow: 1;
 
+  font-size: $size-medium;
+  line-height: $line-height-medium;
   font-weight: 700;
   color: $color-white;
-  line-height: $line-height-medium;
 
   text-decoration: none;
 
@@ -65,6 +66,8 @@
   @media (min-width: $tablet-width) {
     min-width: 153px;
 
+    font-size: $size-small;
+    line-height: $line-height-small;
     color: $color-black;
   }
 

@@ -27,10 +27,23 @@
   &--promo {
     min-width: 284px;
     max-width: 458px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 458px;
+    }
   }
 
   &--submit {
     width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      padding: 16px 50px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 384px;
+    }
   }
 
   &--modal {

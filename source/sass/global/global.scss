@@ -26,3 +26,21 @@
 .picture {
   line-height: 0;
 }
+
+.br {
+  &--mobile {
+    display: none;
+
+    @media (width < $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
