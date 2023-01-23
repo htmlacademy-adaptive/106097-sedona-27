@@ -182,11 +182,11 @@
   }
 
   &--phone::before {
-    background-image: url("../img/icons/phone.svg");
+    background-image: url("../img/phone.svg");
   }
 
   &--mail::before {
-    background-image: url("../img/icons/mail.svg");
+    background-image: url("../img/mail.svg");
   }
 }
 
@@ -394,7 +394,7 @@ input[type="radio"]:checked + .review-form__radio-mark::after {
     height: 16px;
 
     content: "";
-    background-image: url("../img/icons/tick.svg");
+    background-image: url("../img/tick.svg");
   }
 }
 

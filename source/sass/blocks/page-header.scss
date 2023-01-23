@@ -36,6 +36,7 @@
 
   border: none;
   background-color: transparent;
+  fill: $color-accent;
   opacity: 1;
 
   &:hover {
@@ -56,13 +57,15 @@
 
     width: 22.2px;
     height: 22.2px;
-
-    z-index: 4;
   }
 
   &--nojs {
     display: none;
   }
+}
+
+.page-header__icon--cross {
+  display: none;
 }
 
 .page-header__toggle--opened .page-header__icon--cross {
