@@ -1,13 +1,15 @@
-@use "../global" as *;
-
 .likes {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   grid-row: 1 / -1;
 
   font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
 
   @media (min-width: $desktop-width) {
     color: $color-white;
@@ -17,23 +19,24 @@
 .likes__button {
   border: none;
   background-color: transparent;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 15px;
+
+  @media (min-width: $desktop-width) {
+    fill: $color-white;
+  }
 
   &:hover {
     cursor: pointer;
   }
 
-  &:hover svg path {
+  &:hover .likes__icon {
     fill: $color-accent;
   }
 
-  &:active svg path {
-    fill: $color-eccent-active;
-  }
 
-  & svg path {
-    @media (min-width: $desktop-width) {
-      fill: $color-white;
-      opacity: 1;
-    }
+  &:active .likes__icon {
+    fill: $color-eccent-active;
   }
 }

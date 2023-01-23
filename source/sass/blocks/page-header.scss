@@ -1,10 +1,8 @@
-@use "../global" as *;
-
 .page-header {
   position: relative;
 
-  display: grid;
-  padding: 0 20.1px;
+  display: flex;
+  justify-content: center;
 
   min-height: 56px;
 
@@ -15,60 +13,55 @@
 
 .page-header__logo {
   position: absolute;
+
+  width: 185px;
+  height: 96px;
+
   justify-self: center;
+  z-index: 2;
 
   &--nojs {
     position: static;
-  }
-
-  @media (min-width: $tablet-width) {
-    z-index: 2;
   }
 }
 
 .page-header__toggle {
   position: absolute;
   content: "";
-  top: 17px;
-  right: 20.1px;
+  top: 16px;
+  right: 25px;
 
   width: 22.9px;
   height: 22px;
 
   border: none;
   background-color: transparent;
+  opacity: 1;
 
-  &:hover svg path {
+  &:hover {
     opacity: 60%;
   }
 
-  &:active svg path {
+  &:active {
     opacity: 30%;
   }
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   &--opened {
+    top: -8px;
     right: 19.8px;
 
     width: 22.2px;
     height: 22.2px;
 
-    z-index: 1;
+    z-index: 4;
   }
 
   &--nojs {
     display: none;
-  }
-}
-
-.page-header__icon {
-  &--cross {
-    display: none;
-  }
-
-  &--burger {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
   }
 }
 

@@ -1,50 +1,56 @@
-@use "../global" as *;
-
 .site-list {
   @include list-reset;
   width: 100%;
-
-  background-color: $color-accent;
 
   @media (min-width: $tablet-width) {
     position: static;
 
     display: flex;
     flex-wrap: wrap;
-    width: auto;
-    max-width: 40%;
+    width: 100%;
 
     background-color: $color-white;
   }
 
-  &--pages {
-    margin-right: auto;
+  &--opened {
+    background-color: $color-accent;
+    z-index: 3;
   }
 }
 
 .site-list__item {
   position: relative;
   display: flex;
+  width: calc(100% / 5);
 
   @media (max-width: $tablet-width) {
     box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2);
   }
 }
 
+.site-list__item:nth-child(2n):not(:nth-child(4n)) {
+  margin-right: calc(100% / 5);
+}
+
 .site-list__item--current .site-list__link {
   color: $color-current;
+}
+
+.site-list--opened .site-list__item {
+  width: 100%;
 }
 
 .site-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 55px;
+  min-height: 56px;
   flex-grow: 1;
 
+  font-size: $size-medium;
+  line-height: $line-height-medium;
   font-weight: 700;
   color: $color-white;
-  line-height: $line-height-medium;
 
   text-decoration: none;
 
@@ -60,6 +66,8 @@
   @media (min-width: $tablet-width) {
     min-width: 153px;
 
+    font-size: $size-small;
+    line-height: $line-height-small;
     color: $color-black;
   }
 

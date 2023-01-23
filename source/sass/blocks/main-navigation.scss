@@ -1,5 +1,3 @@
-@use "../global" as *;
-
 .main-navigation {
   position: absolute;
   top: 0;
@@ -14,6 +12,7 @@
     display: none;
 
     @media (min-width: $tablet-width) {
+      position: static;
       display: flex;
       flex-direction: row;
     }

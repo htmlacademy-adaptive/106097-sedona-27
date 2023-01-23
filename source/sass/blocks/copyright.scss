@@ -1,5 +1,3 @@
-@use "../global" as *;
-
 .copyright {
   position: relative;
 
@@ -19,13 +17,5 @@
 }
 
 .copyright__icon {
-  margin-left: 8.5px;
-}
-
-.copyright:hover .copyright__icon path {
-  fill: $color-accent;
-}
-
-.copyright:active .copyright__icon path {
-  fill: $color-grey-active;
+  margin-left: 9px;
 }
