@@ -18,7 +18,7 @@
     <a class="page-header__logo page-header__logo--nojs" href="#">
       <img class="image page-header__logo-image" width="185" height="96" src="img/logo.svg" alt="Логотип Седоны">
     </a>
-    <button class="page-header__toggle page-header__toggle--nojs" type="button"><svg width="23" height="22">
+    <button class="page-header__toggle page-header__toggle--nojs" type="button"><svg class="page-header__icon page-header__icon--burger" width="23" height="22">
         <use xlink:href="img/sprite.svg#burger"></use>
       </svg>
       <svg class="page-header__icon page-header__icon--cross" width="23" height="23">
@@ -40,6 +40,7 @@
           <a class="site-list__link" href="https://htmlacademy.ru" rel="nofollow" aria-label="Сайт HTML Academy">HTML
             Academy</a>
         </li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -58,16 +59,16 @@
           <section class="advantage--in-detail">
             <hgroup class="advantage__text advantage__text--highlighted advantage__text--town">
               <h3 class="advantage__headline advantage__headline--highlighted">Настоящий<br> городок</h3>
-              <span class="advantage__subheadline">— №1 —</span>
+              <p class="advantage__subheadline">— №1 —</p>
               <p class="advantage__paragraph">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </hgroup>
             <picture>
               <source media="(min-width: 769px)"
-                srcset="img/content/city/city-desktop@1x.jpg 1x, img/content/city/city-desktop@2x.jpg 2x"">
-              <source media="(width: 768px)"
+                srcset="img/content/city/city-desktop@1x.jpg 1x, img/content/city/city-desktop@2x.jpg 2x">
+              <source media=" (width: 768px)"
                 srcset="img/content/city/city-tablet@1x.jpg 1x, img/content/city/city-tablet@2x.jpg 2x">
               <img class="image advantage__image" src="img/content/city/city-mobile@1x.jpg"
-                srcset="img/content/city/city-mobile@1x.jpg 2x" srcset="img/content/city/city@2x.jpg 2x"
+                srcset="img/content/city/city-mobile@2x.jpg 2x"
                 alt="Здания в Седоне.">
             </picture>
           </section>
@@ -104,8 +105,9 @@
         <li class="advantages-list__item advantages-list__item--in-detail">
           <section class="advantage--in-detail">
             <hgroup class="advantage__text advantage__text--highlighted advantage__text--diablo">
-              <h3 class="advantage__headline advantage__headline--highlighted advantage__headline--diablo">Там есть<br> мост дьявола</h3>
-              <span class="advantage__subheadline">— №2 —</span>
+              <h3 class="advantage__headline advantage__headline--highlighted advantage__headline--diablo">Там есть<br>
+                мост дьявола</h3>
+              <p class="advantage__subheadline">— №2 —</p>
               <p class="advantage__paragraph">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </hgroup>
             <picture>
@@ -114,8 +116,7 @@
               <source media="(width: 768px)"
                 srcset="img/content/diablo-bridge/diablo-bridge-tablet@1x.jpg 1x, img/content/diablo-bridge/diablo-bridge-tablet@2x.jpg 2x">
               <img class="image advantage__image" src="img/content/diablo-bridge/diablo-bridge-mobile@1x.jpg"
-                srcset="img/content/diablo-bridge/diablo-bridge-mobile@2x.jpg 2x"
-                srcset="img/content/diablo-bridge/diablo-bridge@2x.jpg 2x" alt="Мост Дьявола.">
+                srcset="img/content/diablo-bridge/diablo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола.">
             </picture>
           </section>
         </li>
@@ -126,7 +127,7 @@
           <section class="advantage">
             <hgroup class="advantage__text advantage__text--city">
               <h3 class="advantage__headline">Небольшая<br> площадь</h3>
-              <span class="advantage__subheadline">— №3 —</span>
+              <p class="advantage__subheadline">— №3 —</p>
               <p>Все интересные места находятся очень близко</p>
             </hgroup>
           </section>
@@ -135,7 +136,7 @@
           <section class="advantage">
             <hgroup class="advantage__text advantage__text--city">
               <h3 class="advantage__headline">Красивая<br> дорога</h3>
-              <span class="advantage__subheadline">— №4 —</span>
+              <p class="advantage__subheadline">— №4 —</p>
               <p class="advantage__paragraph">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </hgroup>
           </section>
@@ -144,7 +145,7 @@
           <section class="advantage">
             <hgroup class="advantage__text advantage__text--city">
               <h3 class="advantage__headline">Мало<br> туристов</h3>
-              <span class="advantage__subheadline">— №5 —</span>
+              <p class="advantage__subheadline">— №5 —</p>
               <p>Большинство едет в Гранд Каньон и толпится там</p>
             </hgroup>
           </section>

@@ -43,6 +43,7 @@ const scripts = () => {
   .pipe(terser())
   .pipe(rename('app.min.js'))
   .pipe(gulp.dest('build/js'))
+  .pipe(browser.stream());
 }
 
 // Images
@@ -116,11 +117,19 @@ const server = (done) => {
   done();
 }
 
+// Reload
+
+const reload = (done) => {
+  browser.reload();
+  done();
+  }
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/js/**/*.js', gulp.series(scripts));
+  gulp.watch('source/*.html'), gulp.series(html, reload);
 }
 
 
