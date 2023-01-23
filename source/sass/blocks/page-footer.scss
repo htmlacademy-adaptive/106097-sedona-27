@@ -13,7 +13,7 @@
     padding-left: 5px;
   }
 
-  @media (width > $tablet-width) {
+  @media (min-width: 769px) {
     justify-content: center;
   }
 

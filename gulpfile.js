@@ -4,6 +4,22 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import imagemin, { svgo } from 'gulp-imagemin';
+import webp from 'gulp-webp';
+import svgstore from 'gulp-svgstore';
+import csso from 'postcss-csso';
+import {deleteAsync} from 'del';
+import rename from 'gulp-rename';
+import terser from 'gulp-terser';
+import htmlmin from 'gulp-htmlmin';
+
+// HTML
+
+const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(gulp.dest('build'));
+};
 
 // Styles
 
@@ -12,18 +28,86 @@ export const styles = () => {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
+  .pipe(rename('app.min.js'))
+  .pipe(gulp.dest('build/js'))
+}
+
+// Images
+
+const images = () => {
+  return gulp.src(['source/img/**/*.{jpg,png,svg}', '!source/img/icons'])
+  .pipe(imagemin([
+  imagemin.mozjpeg({quality: 75, progressive: true}),
+  imagemin.optipng({optimizationLevel: 3}),
+  imagemin.svgo({plugins: [{removeViewBox: false}]})
+  ]))
+  .pipe(gulp.dest('build/img'))
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png,svg}')
+  .pipe(gulp.dest('build/img'))
+}
+
+// WebP
+
+const createWebp = () => {
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/icons'])
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest('build/img'))
+}
+
+// Sprite
+
+const sprite = () => {
+  return gulp.src("source/img/icons/*.svg")
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
+  }
+
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+  "source/fonts/*.{woff2,woff}",
+  "source/favicon.ico",
+  "source/manifest.webmanifest",
+  "source/apple-touch-icon-precomposed.png",
+  ], {
+  base: "source"
+  })
+  .pipe(gulp.dest("build"))
+  done();
+  }
+
+// Clean
+
+const clean = () => {
+  return deleteAsync("build");
+  };
 
 // Server
 
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -41,5 +125,30 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+  styles,
+  html,
+  scripts,
+  sprite,
+  createWebp
+  ),
+  gulp.series(
+  server,
+  watcher
+  ));
+
+export const build = gulp.series(
+  clean,
+  copy,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    images,
+    sprite,
+    createWebp
+  ),
 );
