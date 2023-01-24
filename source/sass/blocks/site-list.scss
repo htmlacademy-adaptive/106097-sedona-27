@@ -53,10 +53,6 @@
   margin-right: calc(100% / 5);
 }
 
-.site-list__item--current .site-list__link {
-  color: $color-current;
-}
-
 .site-list--opened .site-list__item {
   width: 100%;
 }
@@ -95,4 +91,16 @@
   @media (min-width: $desktop-width) {
     min-width: 240px;
   }
+}
+
+.site-list--opened .site-list__link {
+  color: $color-white;
+}
+
+.site-list__item--current .site-list__link {
+  color: $color-current;
+}
+
+.site-list--opened .site-list__item:nth-child(2n):not(:nth-child(4n)) {
+  margin-right: 0;
 }
