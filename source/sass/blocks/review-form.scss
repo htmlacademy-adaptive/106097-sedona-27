@@ -37,8 +37,6 @@
   }
 
   &--contacts {
-    align-items: center;
-
     @media (min-width: $tablet-width) {
       align-items: flex-start;
     }
@@ -257,7 +255,7 @@
     flex-direction: column;
     min-width: 280px;
     min-height: 40px;
-    padding: 20px 12px 15px 11px;
+    padding: 11px 10px 13px 11px;
 
     font-family: $ff-ptsans;
     font-size: $size-medium;
@@ -288,8 +286,7 @@
   }
 
   &--icon {
-    padding-right: 58px;
-    min-width: 222px;
+    min-width: 250px;
 
     @media (min-width: $desktop-width) {
       min-width: 344px;
