@@ -18,7 +18,8 @@
     <a class="page-header__logo page-header__logo--nojs" href="#">
       <img class="image page-header__logo-image" width="185" height="96" src="img/logo.svg" alt="Логотип Седоны">
     </a>
-    <button class="page-header__toggle page-header__toggle--nojs" type="button"><svg class="page-header__icon page-header__icon--burger" width="23" height="22">
+    <button class="page-header__toggle page-header__toggle--nojs" type="button"><svg
+        class="page-header__icon page-header__icon--burger" width="23" height="22">
         <use xlink:href="img/sprite.svg#burger"></use>
       </svg>
       <svg class="page-header__icon page-header__icon--cross" width="23" height="23">
@@ -64,12 +65,16 @@
             </hgroup>
             <picture>
               <source media="(min-width: 769px)"
+                srcset="img/content/city/city-desktop@1x.webp 1x, img/content/city/city-desktop@2x.webp 2x">
+              <source media=" (width: 768px)"
+                srcset="img/content/city/city-tablet@1x.webp 1x, img/content/city/city-tablet@2x.webp 2x">
+              <source srcset="img/content/city/city-mobile@1x.webp 1x, img/content/city/city-mobile@2x.webp 2x">
+              <source media="(min-width: 769px)"
                 srcset="img/content/city/city-desktop@1x.jpg 1x, img/content/city/city-desktop@2x.jpg 2x">
               <source media=" (width: 768px)"
                 srcset="img/content/city/city-tablet@1x.jpg 1x, img/content/city/city-tablet@2x.jpg 2x">
               <img class="image advantage__image" src="img/content/city/city-mobile@1x.jpg"
-                srcset="img/content/city/city-mobile@2x.jpg 2x"
-                alt="Здания в Седоне.">
+                srcset="img/content/city/city-mobile@2x.jpg 2x" alt="Здания в Седоне.">
             </picture>
           </section>
         </li>
@@ -111,6 +116,11 @@
               <p class="advantage__paragraph">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </hgroup>
             <picture>
+              <source media="(min-width: 769px)"
+                srcset="img/content/diablo-bridge/diablo-bridge-desktop@1x.webp 1x, img/content/diablo-bridge/diablo-bridge-desktop@2x.webp 2x">
+              <source media="(width: 768px)"
+                srcset="img/content/diablo-bridge/diablo-bridge-tablet@1x.webp 1x, img/content/diablo-bridge/diablo-bridge-tablet@2x.webp 2x">
+              <source srcset="img/content/diablo-bridge/diablo-bridge-mobile@1x.webp 1x, img/content/diablo-bridge/diablo-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 769px)"
                 srcset="img/content/diablo-bridge/diablo-bridge-desktop@1x.jpg 1x, img/content/diablo-bridge/diablo-bridge-desktop@2x.jpg 2x">
               <source media="(width: 768px)"
