@@ -23,7 +23,7 @@
   border: none;
 
   &--greeting {
-    align-items: center;
+    // align-items: center;
 
     @media (min-width: $tablet-width) {
       align-items: flex-start;
