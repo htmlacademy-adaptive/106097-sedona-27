@@ -63,11 +63,11 @@
   &--controls {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin-left: 45px;
 
     @media (min-width: $tablet-width) {
       flex-direction: row;
-      flex-wrap: wrap;
       max-width: 600px;
       margin-left: 20px;
     }
@@ -75,7 +75,6 @@
     @media (min-width: $desktop-width) {
       max-width: 980px;
       margin-left: 0;
-      flex-wrap: nowrap;
     }
   }
 
