@@ -25,7 +25,8 @@
   }
 
   &--town {
-    padding: 54px 18px 25px 18px;
+    min-height: 226px;
+    padding: 52px 20px 21px 17px;
 
     @media (min-width: $tablet-width) {
       padding: 32px 18px 0 18px;
@@ -34,7 +35,7 @@
 
   &--diablo {
     order: 1;
-    padding: 33px 30px 10px 30px;
+    padding: 32px 30px 18px 22px;
   }
 
   &--city {
@@ -53,12 +54,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: $size-large;
-  }
-
-  & br {
-    @media (max-width: 767px) {
-      display: none;
-    }
   }
 
   &--highlighted {
@@ -87,6 +82,10 @@
       margin-bottom: 22px;
       padding-top: 80px;
     }
+  }
+
+  &--house {
+    margin-bottom: 22px;
   }
 
   &--house::before {
@@ -172,6 +171,7 @@
 
 .advantage__subheadline {
   line-height: $line-height-small;
+  margin-top: 12px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -179,24 +179,22 @@
   }
 }
 
-.image.advantage__image {
-  min-height: 260px;
+.advantage__image {
+  width: 100%;
+  height: 260px;
   object-fit: cover;
   object-position: 70% 0;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+
+    height: 256px;
   }
 }
 
 .advantage__paragraph {
-  margin-top: 18px;
+  margin-top: 16px;
+  margin-left: 8px;
+  margin-bottom: 12px;
 
   line-height: 21px;
-}
-
-.advantage__paragraph br {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }

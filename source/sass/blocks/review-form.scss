@@ -23,8 +23,6 @@
   border: none;
 
   &--greeting {
-    // align-items: center;
-
     @media (min-width: $tablet-width) {
       align-items: flex-start;
       padding-right: 43px;
@@ -224,6 +222,7 @@
 
 .review-form__label--checkbox {
   padding-left: 45px;
+  min-width: 0;
 }
 
 .review-form__label--checkbox:not(:last-child) {
@@ -232,7 +231,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 18px;
+    margin-right: 64px;
   }
 }
 
