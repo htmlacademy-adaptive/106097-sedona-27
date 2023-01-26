@@ -43,6 +43,7 @@
   background-color: transparent;
   fill: $color-accent;
   opacity: 1;
+  z-index: 4;
 
   &:hover {
     opacity: 60%;
@@ -57,8 +58,7 @@
   }
 
   &--opened {
-    top: -8px;
-    right: 19.8px;
+    right: 25px;
 
     width: 22.2px;
     height: 22.2px;
