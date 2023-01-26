@@ -44,7 +44,7 @@
     </nav>
   </header>
   <main>
-    <section class="hero hero--inner hero--review">
+    <section class="hero hero--inner hero--review hero--nojs">
       <img class="hero__image hero__image--inner" src="img/sedona.svg" width="229" height="39" alt="Sedona">
     </section>
     <hgroup class="page-headline page-headline--inner page-headline--review">
@@ -88,14 +88,14 @@
         <fieldset class="review-form__fieldset review-form__fieldset--controls">
           <legend class="review-form__legend review-form__legend--impression">Ваше общее впечатление:</legend>
           <div class="container container--controls">
-            <label class="review-form__label review-form__label--control"><input
-                class="review-form__input visually-hidden" type="radio" name="rating" checked><span
+            <input class="review-form__input visually-hidden" id="positive" type="radio" name="rating" checked>
+            <label class="review-form__label review-form__label--control" for="positive"><span
                 class="review-form__radio-mark"></span>Скорее положительное</label>
-            <label class="review-form__label review-form__label--control"><input
-                class="review-form__input visually-hidden" type="radio" name="rating"><span
+            <input class="review-form__input visually-hidden" id="negative" type="radio" name="rating">
+            <label class="review-form__label review-form__label--control" for="negative"><span
                 class="review-form__radio-mark"></span>Скорее отрицательное</label>
-            <label class="review-form__label review-form__label--control"><input
-                class="review-form__input visually-hidden" type="radio" name="rating"><span
+            <input class="review-form__input visually-hidden" id="dontknow" type="radio" name="rating">
+            <label class="review-form__label review-form__label--control" for="dontknow"><span
                 class="review-form__radio-mark"></span>Затрудняюсь ответить</label>
           </div>
         </fieldset>
@@ -104,17 +104,17 @@
         <fieldset class="review-form__fieldset review-form__fieldset--controls review-form__fieldset--sights">
           <legend class="review-form__legend review-form__legend--sights">Посещенные<br> достопримечательности:</legend>
           <div class="container container--controls container--controls-sights">
-            <label class="review-form__label review-form__label--control review-form__label--checkbox"><input
-                class="review-form__input visually-hidden" type="checkbox" name="sights" checked><span
-                class="review-form__checkbox-mark"></span>Мост Дьявола</label>
-            <label class="review-form__label review-form__label--control review-form__label--checkbox"><input
-                class="review-form__input visually-hidden" type="checkbox" name="sights" checked><span
+            <input class="review-form__input visually-hidden" id="diablo" type="checkbox" name="sights" checked>
+            <label class="review-form__label review-form__label--control review-form__label--checkbox"
+              for="diablo"><span class="review-form__checkbox-mark"></span>Мост Дьявола</label>
+            <input class="review-form__input visually-hidden" id="mount" type="checkbox" name="sights" checked>
+            <label class="review-form__label review-form__label--control review-form__label--checkbox" for="mount"><span
                 class="review-form__checkbox-mark"></span>Гора-Колокол</label>
-            <label class="review-form__label review-form__label--control review-form__label--checkbox"><input
-                class="review-form__input visually-hidden" type="checkbox" name="sights" checked><span
+            <input class="review-form__input visually-hidden" id="park" type="checkbox" name="sights" checked>
+            <label class="review-form__label review-form__label--control review-form__label--checkbox" for="park"><span
                 class="review-form__checkbox-mark"></span>Слайд-парк</label>
-            <label class="review-form__label review-form__label--control review-form__label--checkbox"><input
-                class="review-form__input visually-hidden" type="checkbox" name="sights"><span
+            <input class="review-form__input visually-hidden" id="rocks" type="checkbox" name="sights">
+            <label class="review-form__label review-form__label--control review-form__label--checkbox" for="rocks"><span
                 class="review-form__checkbox-mark"></span>Красные скалы</label>
           </div>
         </fieldset>

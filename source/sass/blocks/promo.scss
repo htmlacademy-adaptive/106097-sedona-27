@@ -12,7 +12,7 @@
       padding: 35px 18px 57px 18px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       padding-bottom: 66px;
     }
 
@@ -23,32 +23,15 @@
 
   &--photo {
     padding: 17px 20px 0 20px;
+    margin-bottom: 3px;
 
     @media (min-width: $tablet-width) {
       padding-top: 57px;
     }
-  }
 
-  &::before {
-    position: absolute;
-    bottom: 19vw;
-    left: calc(100vw / 2 - 23px);
-
-    @media (min-width: 830px) {
-      bottom: 250px;
+    @media (min-width: $desktop-width) {
+      padding-top: 60px;
     }
-
-    @media (min-width: 1200px) {
-      bottom: 24vw;
-      left: 574px;
-    }
-
-    width: 48px;
-    height: 54px;
-
-    content: "";
-    background-image: url("../img/play.svg");
-    cursor: pointer;
   }
 }
 
@@ -89,7 +72,8 @@
 
   &--photo {
     max-width: 445px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
+
 
     @media (min-width: $tablet-width) {
       margin-bottom: 88px;
@@ -106,11 +90,42 @@
   @media (min-width: $tablet-width) {
     max-width: 648px;
     max-height: 500px;
-    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 800px;
-    margin-bottom: 90px;
+  }
+}
+
+.promo__wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.promo__video-button {
+  position: absolute;
+  top: 34%;
+  left: 41%;
+
+  width: 48px;
+  height: 54px;
+
+  content: "";
+  cursor: pointer;
+
+  background-image: url("../img/play.svg");
+  background-color: transparent;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 44%;
+    left: 47%;
   }
 }

@@ -1,6 +1,5 @@
 .comment {
   align-self: end;
-  margin-top: 3px;
 
   font-size: $size-tiny;
   line-height: $line-height-small;
@@ -10,6 +9,7 @@
   @media (min-width: $tablet-width) {
     align-self: center;
     margin-left: auto;
+    margin-top: 7px;
 
     font-size: $size-small;
   }

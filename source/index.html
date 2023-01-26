@@ -45,12 +45,12 @@
     </nav>
   </header>
   <main>
-    <section class="hero hero--index">
+    <section class="hero hero--index hero--nojs">
       <img class="image hero__image hero__image--index" src="img/welcome.svg" width="461" height="350"
         alt="Welcome to the gorgerous Sedona. Because the Grand Canyon sucks!">
     </section>
     <hgroup class="page-headline page-headline--index">
-      <h1 class="page-headline__headline">СЕДОНА — небольшой<br> городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="page-headline__headline">СЕДОНА — небольшой<br class="br br--mobile"> городок в Аризоне, заслуживающий большего!</h1>
       <p class="page-headline__subheadline">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </hgroup>
     <section class="advantages">
@@ -59,7 +59,7 @@
         <li class="advantages-list__item advantages-list__item--in-detail">
           <section class="advantage advantage--in-detail">
             <hgroup class="advantage__text advantage__text--highlighted advantage__text--town">
-              <h3 class="advantage__headline advantage__headline--highlighted">Настоящий<br> городок</h3>
+              <h3 class="advantage__headline advantage__headline--highlighted">Настоящий<br class="br br--tablet"> городок</h3>
               <p class="advantage__subheadline">— №1 —</p>
               <p class="advantage__paragraph">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </hgroup>
@@ -74,8 +74,8 @@
                 srcset="img/content/city/city-desktop@1x.jpg 1x, img/content/city/city-desktop@2x.jpg 2x">
               <source media=" (width: 768px)"
                 srcset="img/content/city/city-tablet@1x.jpg 1x, img/content/city/city-tablet@2x.jpg 2x">
-              <img class="image advantage__image" src="img/content/city/city-mobile@1x.jpg"
-                srcset="img/content/city/city-mobile@2x.jpg 2x" alt="Здания в Седоне.">
+              <img class="advantage__image" src="img/content/city/city-mobile@1x.jpg"
+                srcset="img/content/city/city-mobile@2x.jpg 2x" width="320" height="260" alt="Здания в Седоне.">
             </picture>
           </section>
         </li>
@@ -93,7 +93,7 @@
           <section class="advantage">
             <hgroup>
               <h3 class="advantage__headline advantage__headline--recommendation advantage__headline--burger">Еда</h3>
-              <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br class="br br--tablet"> Вы НЕ разочаруетесь!</p>
             </hgroup>
           </section>
         </li>
@@ -102,7 +102,7 @@
             <hgroup>
               <h3 class="advantage__headline advantage__headline--recommendation advantage__headline--gift">Сувениры
               </h3>
-              <p>Не только китайского, но и местного производства!</p>
+              <p>Не только китайского,<br class="br br--tablet"> но и местного производства!</p>
             </hgroup>
           </section>
         </li>
@@ -111,7 +111,7 @@
         <li class="advantages-list__item advantages-list__item--in-detail">
           <section class="advantage advantage--in-detail">
             <hgroup class="advantage__text advantage__text--highlighted advantage__text--diablo">
-              <h3 class="advantage__headline advantage__headline--highlighted advantage__headline--diablo">Там есть<br>
+              <h3 class="advantage__headline advantage__headline--highlighted advantage__headline--diablo">Там есть<br class="br br--tablet">
                 мост дьявола</h3>
               <p class="advantage__subheadline">— №2 —</p>
               <p class="advantage__paragraph">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -134,39 +134,33 @@
         </li>
       </ul>
 
-      <ul class="advantages-list advantages-list--city">
-        <li class="advantages-list__item advantages-list__item--city">
-          <section class="advantage">
-            <hgroup class="advantage__text advantage__text--city">
-              <h3 class="advantage__headline">Небольшая<br> площадь</h3>
-              <p class="advantage__subheadline">— №3 —</p>
-              <p>Все интересные места находятся очень близко</p>
+      <ul class="town">
+        <li class="town__item">
+            <hgroup class="town__text">
+              <h3 class="town__headline">Небольшая<br class="br br--tablet"> площадь</h3>
+              <p class="town__subheadline">— №3 —</p>
+              <p class="town__paragraph">Все интересные места находятся<br class="br br--mobile"> очень близко</p>
             </hgroup>
-          </section>
         </li>
-        <li class="advantages-list__item advantages-list__item--city">
-          <section class="advantage">
-            <hgroup class="advantage__text advantage__text--city">
-              <h3 class="advantage__headline">Красивая<br> дорога</h3>
-              <p class="advantage__subheadline">— №4 —</p>
-              <p class="advantage__paragraph">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
+        <li class="town__item town__item--road">
+            <hgroup class="town__text">
+              <h3 class="town__headline">Красивая<br class="br br--tablet"> дорога</h3>
+              <p class="town__subheadline town__subheadline--road">— №4 —</p>
+              <p class="town__paragraph">Ехать в Седону из Лас-Вегаса<br class="br br--mobile"> совсем<br class="br br--tablet"> не скучно!</p>
             </hgroup>
-          </section>
         </li>
-        <li class="advantages-list__item advantages-list__item--city">
-          <section class="advantage">
-            <hgroup class="advantage__text advantage__text--city">
-              <h3 class="advantage__headline">Мало<br> туристов</h3>
-              <p class="advantage__subheadline">— №5 —</p>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
+        <li class="town__item">
+            <hgroup class="town__text">
+              <h3 class="town__headline">Мало<br class="br br--tablet"> туристов</h3>
+              <p class="town__subheadline">— №5 —</p>
+              <p class="town__paragraph">Большинство едет в Гранд Каньон и толпится там</p>
             </hgroup>
-          </section>
         </li>
       </ul>
     </section>
     <section class="promo promo--index">
       <h2 class="promo__headline">Заинтересовались?</h2>
-      <p class="promo__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+      <p class="promo__text">Укажите предполагаемые даты поездки,<br class="br br--tablet"> и мы покажем вам лучшие предложения
         гостиниц
         в
         Седоне</p>

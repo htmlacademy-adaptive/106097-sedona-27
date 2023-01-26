@@ -44,10 +44,10 @@
     </nav>
   </header>
   <main>
-    <section class="hero hero--inner">
+    <section class="hero hero--inner  hero--nojs">
       <img class="hero__image hero__image--inner" src="img/sedona.svg" width="229" height="39" alt="Sedona">
     </section>
-    <hgroup class="page-headline page-headline--inner">
+    <hgroup class="page-headline page-headline--inner page-headline--photo">
       <h1 class="page-headline__headline page-headline__headline--inner">Фото и видео</h1>
       <p class="page-headline__subheadline">Не можете решиться на путешествие из-за курса?<br class="br br--tablet">
         Фотографии помогут вам забыть
@@ -100,7 +100,7 @@
               <img class="image photo__image" src="img/content/photo/trees/trees-mobile@1x.jpg"
                 srcset="img/content/photo/trees/trees-mobile@2x.jpg 2x" width="400" height="267" alt="Какой-то кактус.">
             </picture>
-            <div class="photo__wrapper">
+            <div class="photo__wrapper photo__wrapper--small">
               <h3 class="photo__title">Местная растительность</h3>
               <p class="photo__author">Автор фото: Сергей</p>
               <div class="likes">
@@ -127,7 +127,7 @@
               <img class="image photo__image" src="img/content/photo/road/road-mobile@1x.jpg"
                 srcset="img/content/photo/road/road-mobile@2x.jpg 2x" width="400" height="267" alt="Дорога в горах.">
             </picture>
-            <div class="photo__wrapper">
+            <div class="photo__wrapper photo__wrapper--small">
               <h3 class="photo__title">Дорога на север</h3>
               <p class="photo__author">Автор фото: Петр</p>
               <div class="likes">
@@ -154,7 +154,7 @@
               <img class="image photo__image" src="img/content/photo/bridge/bridge-mobile@1x.jpg"
                 srcset="img/content/photo/bridge/bridge-mobile@2x.jpg 2x" width="400" height="267" alt="Мост Дьявола">
             </picture>
-            <div class="photo__wrapper">
+            <div class="photo__wrapper photo__wrapper--small">
               <h3 class="photo__title">Мост Дьявола</h3>
               <p class="photo__author">Автор фото: Антон</p>
               <div class="likes">
@@ -173,10 +173,13 @@
         билетами, пока они<br class="br br--tablet"> не
         подорожали в
         очередной раз!</p>
-      <picture>
-        <source type="image/webp" srcset="img/video-poster.webp">
-        <img class="promo__image" src="img/video-poster.jpg" width="800" height="500" alt="Видео о Седоне.">
-      </picture>
+      <div class="promo__wrapper">
+        <button class="promo__video-button"><span class="visually-hidden">Запустить видео</span></button>
+        <picture>
+          <source type="image/webp" srcset="img/video-poster.webp">
+          <img class="promo__image" src="img/video-poster.jpg" width="800" height="500" alt="Видео о Седоне.">
+        </picture>
+      </div>
     </section>
   </main>
 
