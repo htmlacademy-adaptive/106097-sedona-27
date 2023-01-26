@@ -271,7 +271,6 @@
     &:focus {
       border: 4px solid $color-page-background;
       background-color: $color-page-background;
-      outline: none;
     }
 
     &:active {
@@ -320,7 +319,6 @@
     &:focus {
       border: 4px solid $color-page-background;
       background-color: $color-page-background;
-      outline: none;
     }
 
     &:active {
@@ -403,7 +401,19 @@ input[type="radio"]:checked + .review-form__radio-mark::after {
   }
 }
 
-input[type="checkbox"]:checked + .review-form__checkbox-mark::after {
+input[type="checkbox"]:focus + .review-form__label--checkbox .review-form__checkbox-mark::before {
+  background-color: $color-separator-light;
+}
+
+input[type="checkbox"]:checked + .review-form__label--checkbox .review-form__checkbox-mark::after {
+  display: block;
+}
+
+input[type="radio"]:focus + .review-form__label--control .review-form__radio-mark::before {
+  background-color: $color-separator-light;
+}
+
+input[type="radio"]:checked + .review-form__label--control .review-form__radio-mark::after {
   display: block;
 }
 

@@ -81,6 +81,14 @@
       min-height: 300px;
     }
   }
+
+  &--nojs {
+    padding-top: 120px;
+  }
+
+  &--inner.hero--nojs {
+    min-height: 254px;
+  }
 }
 
 .hero__image {
