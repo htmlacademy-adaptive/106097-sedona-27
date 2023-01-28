@@ -18,4 +18,8 @@
 
 .copyright__icon {
   margin-left: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 15px;
+  }
 }
