@@ -67,6 +67,16 @@
   @media (min-width: $tablet-width) {
     font-size: $size-large;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+  }
+
+  &--road {
+    @media (min-width: $desktop-width) {
+      margin-top: 5px;
+    }
+  }
 }
 
 .town__subheadline {
@@ -83,4 +93,8 @@
 .town__paragraph {
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+  }
 }

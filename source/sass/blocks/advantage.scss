@@ -35,7 +35,12 @@
 
   &--diablo {
     order: 1;
-    padding: 32px 30px 18px 22px;
+    padding: 20px 30px 24px 22px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 32px;
+      padding-bottom: 18px;
+    }
   }
 
   &--city {
@@ -74,6 +79,8 @@
   }
 
   &--recommendation {
+    margin-bottom: 15px;
+
     @media (min-width: $tablet-width) {
       padding-top: 100px;
     }
@@ -85,7 +92,9 @@
   }
 
   &--house {
-    margin-bottom: 22px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
   }
 
   &--house::before {
@@ -114,6 +123,10 @@
 
   &--burger {
     margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 
   &--burger::before {
@@ -134,14 +147,21 @@
 
     @media (min-width: $desktop-width) {
       top: -20px;
-      left: 107px;
+      left: 108px;
     }
 
     background-image: url("../img/icon-burger.svg");
   }
 
   &--gift {
-    margin-bottom: 18px;
+    @media (min-width: $tablet-width) {
+      margin-top: 15px;
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 22px;
+    }
   }
 
   &--gift::before {
@@ -152,7 +172,7 @@
     height: 38px;
 
     @media (min-width: $tablet-width) {
-      top: 0;
+      top: 6px;
       left: 65px;
       width: 66px;
       height: 78px;
@@ -197,4 +217,8 @@
   margin-bottom: 12px;
 
   line-height: 21px;
+}
+
+.advantage__description {
+  margin-top: 0;
 }
