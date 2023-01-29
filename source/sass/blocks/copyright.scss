@@ -14,12 +14,31 @@
   &:active {
     color: $color-grey-active;
   }
+
+  &--index {
+    @media (min-width: $tablet-width) {
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &--inner {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .copyright__icon {
-  margin-left: 9px;
+  margin-left: 11px;
 
   @media (min-width: $tablet-width) {
     margin-left: 15px;
+  }
+
+  &--inner {
+    @media (min-width: $tablet-width) {
+      margin-left: 12px;
+    }
   }
 }

@@ -6,12 +6,11 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 100px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 256px;
+    justify-content: center;
   }
 }
 
