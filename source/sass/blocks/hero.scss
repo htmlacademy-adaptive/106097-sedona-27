@@ -2,7 +2,8 @@
   position: relative;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
 
   background-color: #254455;
@@ -44,7 +45,7 @@
 
   &--index {
     min-height: 389px;
-    padding: 90px 19px 85px 19px;
+    padding: 90px 19px 50px 19px;
 
     @media (min-width: $tablet-width) {
       min-height: 518px;
@@ -54,8 +55,8 @@
 
   &--inner {
     min-height: 158px;
-    max-height: 300px;
     padding-top: 52px;
+    padding-bottom: 50px;
     background-position-x: right;
     background-position-y: bottom;
 
@@ -92,6 +93,7 @@
 }
 
 .hero__image {
+  margin-bottom: 10px;
   &--index {
     width: 282px;
     height: 214px;
